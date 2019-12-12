@@ -1,0 +1,16 @@
+//
+// Created by idan on 12/12/2019.
+//
+
+#ifndef MILESTONE_1_DEFINEVARCOMMAND_H
+#define MILESTONE_1_DEFINEVARCOMMAND_H
+
+
+#include "Command.h"
+
+class DefineVarCommand : public Command{
+
+};
+
+
+#endif //MILESTONE_1_DEFINEVARCOMMAND_H
