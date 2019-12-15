@@ -148,18 +148,31 @@ CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.cpp" -o CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.s
 
-CMakeFiles/Milestone_1.dir/Var.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
-CMakeFiles/Milestone_1.dir/Var.cpp.o: ../Var.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Milestone_1.dir/Var.cpp.o"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Var.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Var.cpp"
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: ../Expressions/Var.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp"
 
-CMakeFiles/Milestone_1.dir/Var.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Var.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Var.cpp" > CMakeFiles/Milestone_1.dir/Var.cpp.i
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp" > CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.i
 
-CMakeFiles/Milestone_1.dir/Var.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Var.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Var.cpp" -o CMakeFiles/Milestone_1.dir/Var.cpp.s
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp" -o CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.s
+
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o: ../Extra\ Methods/Extra.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp"
+
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp" > CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.i
+
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp" -o CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.s
 
 # Object files for target Milestone_1
 Milestone_1_OBJECTS = \
@@ -170,7 +183,8 @@ Milestone_1_OBJECTS = \
 "CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o" \
 "CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o" \
 "CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o" \
-"CMakeFiles/Milestone_1.dir/Var.cpp.o"
+"CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o"
 
 # External object files for target Milestone_1
 Milestone_1_EXTERNAL_OBJECTS =
@@ -182,10 +196,11 @@ Milestone_1: CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o
-Milestone_1: CMakeFiles/Milestone_1.dir/Var.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/build.make
 Milestone_1: CMakeFiles/Milestone_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable Milestone_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable Milestone_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Milestone_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

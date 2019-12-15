@@ -12,11 +12,16 @@ using namespace std;
 
 class Command {
 private:
-    vector<string>* interperted;
+    vector<string*>* interperted; // the vector of data after interpretation
+    map<int,string*>* directories;
+    vector<double>* dataFromSim;
 public:
-    Command(vector<string>* inter){ this->interperted = inter; }
-    virtual int execute();
+    Command(vector<string*>* inter) {
+        this->interperted = inter;
+    }
+    virtual int execute() = 0; // method for all commands to override
     vector<string>* parse(int n);
+    vector<double>* splitNums(char* data, char delimeter);
 };
 
 

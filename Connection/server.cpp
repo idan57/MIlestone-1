@@ -31,7 +31,15 @@ int server::CreateServer() {
     }
     return 1;
 }
-
+void server::CreateConnection() {
+    this->client_socket = accept(this->GetServerSocket(),
+                                  (struct sockaddr*)this->GetServerAddress(),
+                                  (socklen_t*) this->GetServerAddress());
+    if (this->client_socket == -1) {
+        std::cerr<<"Error accepting client " << this->GetServerSocket() <<std::endl;
+        return;
+    }
+}
 void server::CreateDestAddress() {
     this->serverAddress.sin_family = AF_INET;
     this->serverAddress.sin_addr.s_addr = inet_addr(this->address);

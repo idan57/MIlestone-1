@@ -285,32 +285,59 @@ Connection/server.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Connection/server.cpp.s
 .PHONY : Connection/server.cpp.s
 
-Var.o: Var.cpp.o
+Expressions/Var.o: Expressions/Var.cpp.o
 
-.PHONY : Var.o
+.PHONY : Expressions/Var.o
 
 # target to build an object file
-Var.cpp.o:
-	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Var.cpp.o
-.PHONY : Var.cpp.o
+Expressions/Var.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o
+.PHONY : Expressions/Var.cpp.o
 
-Var.i: Var.cpp.i
+Expressions/Var.i: Expressions/Var.cpp.i
 
-.PHONY : Var.i
+.PHONY : Expressions/Var.i
 
 # target to preprocess a source file
-Var.cpp.i:
-	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Var.cpp.i
-.PHONY : Var.cpp.i
+Expressions/Var.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.i
+.PHONY : Expressions/Var.cpp.i
 
-Var.s: Var.cpp.s
+Expressions/Var.s: Expressions/Var.cpp.s
 
-.PHONY : Var.s
+.PHONY : Expressions/Var.s
 
 # target to generate assembly for a file
-Var.cpp.s:
-	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Var.cpp.s
-.PHONY : Var.cpp.s
+Expressions/Var.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.s
+.PHONY : Expressions/Var.cpp.s
+
+Extra_Methods/Extra.o: Extra_Methods/Extra.cpp.o
+
+.PHONY : Extra_Methods/Extra.o
+
+# target to build an object file
+Extra_Methods/Extra.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o
+.PHONY : Extra_Methods/Extra.cpp.o
+
+Extra_Methods/Extra.i: Extra_Methods/Extra.cpp.i
+
+.PHONY : Extra_Methods/Extra.i
+
+# target to preprocess a source file
+Extra_Methods/Extra.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.i
+.PHONY : Extra_Methods/Extra.cpp.i
+
+Extra_Methods/Extra.s: Extra_Methods/Extra.cpp.s
+
+.PHONY : Extra_Methods/Extra.s
+
+# target to generate assembly for a file
+Extra_Methods/Extra.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.s
+.PHONY : Extra_Methods/Extra.cpp.s
 
 main.o: main.cpp.o
 
@@ -366,9 +393,12 @@ help:
 	@echo "... Connection/server.o"
 	@echo "... Connection/server.i"
 	@echo "... Connection/server.s"
-	@echo "... Var.o"
-	@echo "... Var.i"
-	@echo "... Var.s"
+	@echo "... Expressions/Var.o"
+	@echo "... Expressions/Var.i"
+	@echo "... Expressions/Var.s"
+	@echo "... Extra_Methods/Extra.o"
+	@echo "... Extra_Methods/Extra.i"
+	@echo "... Extra_Methods/Extra.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

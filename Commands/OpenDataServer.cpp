@@ -34,7 +34,7 @@ void OpenDataServer::ReadingMode(int client_connected) {
     char buffer[1024] = {0};
     int bytesRead = read(client_connected , buffer, 1024);
     while (bytesRead > 0) {
-        if(this->VarsToUpdate->find())
+        //if(this->VarsToUpdate->find())
         bytesRead = read(client_connected , buffer, 1024);
     }
 }

@@ -15,6 +15,7 @@
 class server {
 private:
     int server_socket;
+    int client_socket;
     int port;
     const char* address;
     sockaddr_in serverAddress;
@@ -22,8 +23,10 @@ public:
     server(int p, const char* addr):port(p), address(addr){}
     void CreateDestAddress();
     int CreateServer();
-    int GetServerSocket() { return  this->server_socket }
-    sockaddr_in* GetServerAddress() { return  &this->serverAddress }
+    int GetServerSocket() { return  this->server_socket;}
+    int GetClientSocket() { return  this->client_socket;}
+    void CreateConnection();
+    sockaddr_in* GetServerAddress() { return  &this->serverAddress;}
 };
 
 

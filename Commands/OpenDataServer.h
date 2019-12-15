@@ -10,11 +10,12 @@
 #include "Command.h"
 #include "../Connection/server.h"
 #include <thread>
+#include <pthread.h>
 #include <chrono>
 #include "../Expressions/Var.h"
 using namespace std;
 
-class OpenDataServer: public Command{
+class OpenDataServer: public Command {
 private:
     server* serverConnection;
     map<string*, Var*>* VarsToUpdate;

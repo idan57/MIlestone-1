@@ -120,10 +120,16 @@
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Var.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Var.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h">
 			<Option target="Milestone_1"/>
 		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/main.cpp">

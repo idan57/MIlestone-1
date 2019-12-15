@@ -1,0 +1,88 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
+string
+-
+iostream
+-
+bits/stdc++.h
+-
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp
+ConnectCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
+Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
+../Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+../Connection/server.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
+../Connection/client.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp
+OpenDataServer.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
+iostream
+-
+map
+-
+Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
+../Connection/server.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
+thread
+-
+pthread.h
+-
+chrono
+-
+../Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
+sys/socket.h
+-
+string
+-
+iostream
+-
+unistd.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
+sys/socket.h
+-
+string
+-
+iostream
+-
+unistd.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp
+Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+iostream
+-
+

@@ -12,6 +12,9 @@ class Var {
 private:
     string* path;
     double value;
+
+    // Will have the expression that we will have to evaluate
+    //Expression expression;
 public:
     Var(string* p, double val):path(p),value(val){}
     void SetPath(string* p) {this->path = p;}
