@@ -4,7 +4,7 @@
 vector<std::__cxx11::string>* Command::parse(int n) {
     // The parsed data in a vector.
     vector<string>* parsed = new vector<string>;
-    int i = 1;
+    int i = 0;
     for(auto curr = (*this->interperted).begin(); i <= n; i++, curr++) {
         parsed->push_back(**curr);
     }
@@ -31,4 +31,15 @@ vector<double> * Command::splitNums(char* data, char delimeter) {
         i++;
     }
     return splitted;
+}
+
+void Command::UpdateVariables(map<std::__cxx11::string *, int> updatedVars,
+        char SerOrCli) {
+    locker.lock();
+
+    // Update Server
+    if (SerOrCli == 's') {
+
+    }
+    locker.unlock();
 }

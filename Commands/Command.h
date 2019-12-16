@@ -11,13 +11,14 @@
 #include "../Expressions/Var.h"
 
 using namespace std;
-
+mutex locker;
 class Command {
 private:
     vector<string*>* interperted; // the vector of data after interpretation
-    map<int,string*>* directories;
     vector<double>* dataFromSim;
+protected:
     map<string*,Var*>* variables;
+    map<string*,int>* directories;
     map<int, string*>* ServerUpdate;
     // All vars that need to be updated via my client.
     map<int, string*>* ClientUpdate;
@@ -30,7 +31,8 @@ public:
     virtual int execute() = 0; // method for all commands to override
     vector<string>* parse(int n);
     vector<double>* splitNums(char* data, char delimeter);
-    void UpdateVariables(map<string*,int> updatedVars);
+    void UpdateVariables(map<string*,double>* updatedVars, char SerOrCli);
+    void setDirectories(map<string*,int>* dirs) {this->directories = dirs;}
 };
 
 

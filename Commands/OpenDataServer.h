@@ -18,16 +18,14 @@ using namespace std;
 class OpenDataServer: public Command {
 private:
     server* serverConnection;
-    map<string*, Var*>* VarsToUpdate;
 public:
-    OpenDataServer(vector<string>* inter):Command(inter){
-        this->VarsToUpdate = new map<string*, Var*>;
-    }
+    OpenDataServer(vector<string*>* inter):Command(inter){ }
     int execute();
     void readData();
     void OpenServerConnection(int port);
     void ReadingMode(int client_connected);
     void StartReading();
+    void ChangeMap(char* dataFromSim);
 };
 
 
