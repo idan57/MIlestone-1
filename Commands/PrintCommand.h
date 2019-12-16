@@ -16,6 +16,7 @@ private:
     Var* variable;
 public:
     PrintCommand(vector<string*>* inter):Command(inter){}
+    int execute();
 };
 
 
