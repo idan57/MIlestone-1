@@ -21,7 +21,6 @@ private:
 public:
     OpenDataServer(vector<string*>* inter):Command(inter){ }
     int execute();
-    void readData();
     void OpenServerConnection(int port);
     void ReadingMode(int client_connected);
     void StartReading();

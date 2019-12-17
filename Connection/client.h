@@ -15,7 +15,9 @@ private:
 public:
     client(){}
     void CreateDestAddress(const char *addr, int port);
-    int EstablishConnection(const char * destAddr, int port);
+    int CreateClient(const char * destAddr, int port);
+    int ConnectToServer(struct sockaddr_in server_address);
+    int SendData(const char* data);
     int GetClientSocket() { return  this->client_socket;}
     sockaddr_in GetDestAddress() { return  this->destAddress;}
 };

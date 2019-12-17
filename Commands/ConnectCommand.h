@@ -10,6 +10,15 @@
 #include "../Expressions/Var.h"
 #include "../Connection/server.h"
 #include "../Connection/client.h"
+#include <sys/socket.h>
+#include <string>
+#include <iostream>
+#include <unistd.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <thread>
+#include <pthread.h>
+#define TRUE 1
 
 class ConnectCommand: public Command{
 private:
@@ -21,9 +30,8 @@ private:
 public:
     ConnectCommand(vector<string*>* inter):Command(inter){}
     int execute();
-    void readData();
-    void OpenClientConnection(int port);
-    void UpdatingMode(int server_connected);
+    void OpenClientConnection();
+    void UpdatingMode(sockaddr_in server_address);
 };
 
 

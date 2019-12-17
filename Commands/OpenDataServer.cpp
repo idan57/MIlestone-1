@@ -6,11 +6,19 @@
 
 
 int OpenDataServer::execute() {
-    vector<string>* parsed = this->parse(1);
-    int port = stoi(*parsed->begin());
+
+    // Parse the vector of parsed data
+    vector<string*>* parsed = this->parse(1);
+
+    // Get The port's value
+    int port = stoi(**parsed->begin());
+
+    // Open server as a thread
     thread serverOpen(&OpenDataServer::OpenServerConnection, this, port);
+
     // Wait until server is open and in reading mode
     serverOpen.join();
+    return 2;
 }
 
 void OpenDataServer::OpenServerConnection(int port) {
@@ -38,16 +46,13 @@ void OpenDataServer::ReadingMode(int client_connected) {
     }
 }
 void OpenDataServer::ChangeMap(char* dataFromSim) {
+
+    // Split data by ','
     vector<double>* dataToUpdate = splitNums(dataFromSim, ',');
-    map<string*, double>* newData = new map<string*, double>;
     int i = 0;
-    int ServerMapLen = this->ServerUpdate->size();
-    while(i < ServerMapLen) {
-        int dataLoc = this->directories->find((*this->ServerUpdate)[i])
-                ->second;
-        newData->insert({(*this->ServerUpdate)[i], dataToUpdate->at(dataLoc)});
-    }
-    UpdateVariables(newData, 's');
+
+    // Update the variables accordingly
+    this->UpdateVariables(dataToUpdate, 's');
 }
 
 

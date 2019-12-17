@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o"
   "CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o"
   "CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o"
+  "CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o"
+  "CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o"
   "CMakeFiles/Milestone_1.dir/Connection/client.cpp.o"
   "CMakeFiles/Milestone_1.dir/Connection/server.cpp.o"
   "CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o"

@@ -231,6 +231,60 @@ Commands/OpenDataServer.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.s
 .PHONY : Commands/OpenDataServer.cpp.s
 
+Commands/PrintCommand.o: Commands/PrintCommand.cpp.o
+
+.PHONY : Commands/PrintCommand.o
+
+# target to build an object file
+Commands/PrintCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o
+.PHONY : Commands/PrintCommand.cpp.o
+
+Commands/PrintCommand.i: Commands/PrintCommand.cpp.i
+
+.PHONY : Commands/PrintCommand.i
+
+# target to preprocess a source file
+Commands/PrintCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.i
+.PHONY : Commands/PrintCommand.cpp.i
+
+Commands/PrintCommand.s: Commands/PrintCommand.cpp.s
+
+.PHONY : Commands/PrintCommand.s
+
+# target to generate assembly for a file
+Commands/PrintCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.s
+.PHONY : Commands/PrintCommand.cpp.s
+
+Commands/WhileCommand.o: Commands/WhileCommand.cpp.o
+
+.PHONY : Commands/WhileCommand.o
+
+# target to build an object file
+Commands/WhileCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o
+.PHONY : Commands/WhileCommand.cpp.o
+
+Commands/WhileCommand.i: Commands/WhileCommand.cpp.i
+
+.PHONY : Commands/WhileCommand.i
+
+# target to preprocess a source file
+Commands/WhileCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.i
+.PHONY : Commands/WhileCommand.cpp.i
+
+Commands/WhileCommand.s: Commands/WhileCommand.cpp.s
+
+.PHONY : Commands/WhileCommand.s
+
+# target to generate assembly for a file
+Commands/WhileCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.s
+.PHONY : Commands/WhileCommand.cpp.s
+
 Connection/client.o: Connection/client.cpp.o
 
 .PHONY : Connection/client.o
@@ -387,6 +441,12 @@ help:
 	@echo "... Commands/OpenDataServer.o"
 	@echo "... Commands/OpenDataServer.i"
 	@echo "... Commands/OpenDataServer.s"
+	@echo "... Commands/PrintCommand.o"
+	@echo "... Commands/PrintCommand.i"
+	@echo "... Commands/PrintCommand.s"
+	@echo "... Commands/WhileCommand.o"
+	@echo "... Commands/WhileCommand.i"
+	@echo "... Commands/WhileCommand.s"
 	@echo "... Connection/client.o"
 	@echo "... Connection/client.i"
 	@echo "... Connection/client.s"

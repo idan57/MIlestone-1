@@ -6,15 +6,11 @@
 #define MILESTONE_1_DEFINEVARCOMMAND_H
 
 
+#include "Command.h"
 
-class DefineVarCommand : public  Command {
-
-    int clientVar = 0;
-    int serverVar = 0;
-public:
-    int execute();
-
+class DefineVarCommand : public Command{
 
 };
+
 
 #endif //MILESTONE_1_DEFINEVARCOMMAND_H

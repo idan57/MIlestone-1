@@ -108,6 +108,18 @@
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h">
 			<Option target="Milestone_1"/>
 		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h">
+			<Option target="Milestone_1"/>
+		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
