@@ -11,9 +11,7 @@ Advanced Programminh - Course
         * WhileCommand - also default, but with addVariablesToIter that adds variables to iter on
     - Added CommandCreator - it includes the while loop for executing commands!
     - Expressions - add a field with a string that contains the expression that later will be interperted
-    - 
-
-
+    - In the piazza daniella mentioned that we need to add a new updated XML with the "heading" field.
 
 Liad  - please add the interpeted + lexer implementation (as a folder if you can) :)
 also all the commands that has no implementations that you created please add (DefineVariable, While, etc.).
