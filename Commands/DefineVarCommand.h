@@ -15,7 +15,9 @@ public:
     DefineVarCommand* copy(vector<string>* inter) {
         return new DefineVarCommand(inter);
     }
-    void UpdateVariable();
+    void UpdateVariable() {
+
+    }
 };
 
 

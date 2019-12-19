@@ -11,31 +11,58 @@
 #include "../Expressions/Var.h"
 
 using namespace std;
-mutex locker;
+static bool initializedVars = false;
+
+// Mutex to lock the code in UpdateVariables method
+
 class Command {
 private:
-    vector<string*>* interperted; // the vector of data after interpretation
-    vector<double>* dataFromSim;
+    mutex locker;
+    vector<string>* interperted; // the vector of data after interpretation
 protected:
     map<string*,Var*>* variables;
-    static map<string*,int>* directories;
 
-    // All vars that need to be updated via my server.
-    map<int, string*>* ServerUpdate;
+    // Map of directories - static so any instance will be able to get the
+    // same field
+     map<string*,int>* directories;
 
-    // All vars that need to be updated via my client.
-    map<int, string*>* ClientUpdate;
+    // All vars that need to be updated via my server - static so any
+    // instance will be able to get the same field
+     map<int, string*>* ServerUpdate;
+
+    // All vars that need to be updated via my client - static so any
+    // instance will be able to get the same field
+     map<int, string*>* ClientUpdate;
+
 public:
-    Command(vector<string*>* inter) {
+    Command(vector<string>* inter) {
         this->interperted = inter;
-        this->ServerUpdate = new map<int, string*>;
-        this->ClientUpdate = new map<int, string*>;
+        IntializeVarsServ();
+    }
+    void IntializeVarsServ() {
+        if (!(initializedVars)) {
+            this->ServerUpdate = new map<int, string *>;
+            this->ClientUpdate = new map<int, string *>;
+            initializedVars = true;
+        }
     }
     virtual int execute() = 0; // method for all commands to override
+    virtual Command* copy(vector<string>* inter) = 0; // method for all
+    // commands to
+    // override
     vector<string*>* parse(int n);
     vector<double>* splitNums(char* data, char delimeter);
+
+
+    // Set the variables the commands should update
+    void AddToVariablesField (pair<string*,Var*>* var){
+        this->variables->insert({var->first, var->second});
+    }
+
     void UpdateVariables(vector<double>* updatedVars, char SerOrCli);
-    void setDirectories(map<string*,int>* dirs) {this->directories = dirs;}
+
+    // Should be set in main via the method Extra::initializeDirectories()
+    void SetDirectories(map<string*,int>* dirs) {this->directories = dirs;}
 };
 
 

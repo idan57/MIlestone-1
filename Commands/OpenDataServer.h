@@ -19,7 +19,10 @@ class OpenDataServer: public Command {
 private:
     server* serverConnection;
 public:
-    OpenDataServer(vector<string*>* inter):Command(inter){ }
+    OpenDataServer(vector<string>* inter):Command(inter){ }
+    OpenDataServer* copy(vector<string>* inter) {
+        return new OpenDataServer(inter);
+    }
     int execute();
     void OpenServerConnection(int port);
     void ReadingMode(int client_connected);

@@ -15,7 +15,10 @@ class PrintCommand: public Command {
 private:
     Var* variable;
 public:
-    PrintCommand(vector<string*>* inter):Command(inter){}
+    PrintCommand(vector<string>* inter):Command(inter){}
+    PrintCommand* copy(vector<string>* inter) {
+        return new PrintCommand(inter);
+    }
 };
 
 

@@ -18,7 +18,8 @@
 #include <arpa/inet.h>
 #include <thread>
 #include <pthread.h>
-#define TRUE 1
+
+#define TRUE 1 // A const for True value
 
 class ConnectCommand: public Command{
 private:
@@ -28,7 +29,10 @@ private:
 
 
 public:
-    ConnectCommand(vector<string*>* inter):Command(inter){}
+    ConnectCommand(vector<string>* inter):Command(inter){}
+    ConnectCommand* copy(vector<string>* inter) {
+        return new ConnectCommand(inter);
+    }
     int execute();
     void OpenClientConnection();
     void UpdatingMode(sockaddr_in server_address);

@@ -3,6 +3,10 @@
 //
 
 #include "ConnectCommand.h"
+#include <unistd.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <sys/socket.h>
 
 int ConnectCommand::execute() {
 
@@ -13,14 +17,18 @@ int ConnectCommand::execute() {
     thread openClient(&ConnectCommand::UpdatingMode, this,
             this->clientConnection->GetDestAddress());
 
-    return 3;
+    // Make the thread run in the background even we end method
+    openClient.detach();
+    return 2;
 }
 void ConnectCommand::OpenClientConnection() {
     sockaddr_in address; //in means IP4
+
     // Get ("Address", port) parsed data
     vector<string*>* clientInfo = this->parse(2);
     string* IP = clientInfo->at(0);
     int PORT = stod(*clientInfo->at(1));
+
     // Create Client
     this->clientConnection = new client();
     int success = this->clientConnection->CreateClient(IP->c_str(), PORT);
@@ -35,25 +43,33 @@ void ConnectCommand::UpdatingMode(sockaddr_in server_address) {
     if (success == -2) {
         throw "Failed To Connect To Server\n";
     }
-    while (TRUE) {
+
+    // Check if connection is still up
+    int valread = this->clientConnection->readFromServer();
+
+    // An infinite loop that gets data from server until there is no connection
+    while (valread) {
 
         // Generate new data to send to
-        stringstream newVals;
-        for (auto dir = this->directories->begin();
-             dir != this->directories->end(); dir++) {
+        for (auto dir = this->ClientUpdate->begin();
+             dir != this->ClientUpdate->end(); dir++) {
+            stringstream newVals;
 
             // We generate a string in the generic server_small.xml format
-            newVals << this->variables->at(dir->first)->GetValue() << ",";
+            newVals << "set " << dir->second << " " <<
+            this->variables->at(dir->second)->GetValue() << "\n";
+
+            // Get the generated string
+            string dataToUpdate = newVals.str();
+
+            // Cut the last ',' from the end
+            dataToUpdate = dataToUpdate.substr(0, (dataToUpdate.size() - 1));
+
         }
 
-        // Get the generated string
-        string dataToUpdate = newVals.str();
-
-        // Cut the last ',' from the end
-        dataToUpdate = dataToUpdate.substr(0, (dataToUpdate.size() - 1));
-
         // Send data
-        int is_sent = this->clientConnection->SendData(dataToUpdate.c_str());
+        valread = this->clientConnection->readFromServer();
+
     }
 }
 
