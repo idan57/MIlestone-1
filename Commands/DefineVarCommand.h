@@ -10,6 +10,12 @@
 
 class DefineVarCommand : public Command{
 
+public:
+    DefineVarCommand(vector<string>* inter):Command(inter){}
+    DefineVarCommand* copy(vector<string>* inter) {
+        return new DefineVarCommand(inter);
+    }
+    void UpdateVariable();
 };
 
 
