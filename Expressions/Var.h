@@ -7,6 +7,9 @@
 
 #include <iostream>
 #include <mutex>
+#include <map>
+#include "Expression.h"
+#include "ex1.h"
 
 using namespace std;
 
@@ -15,6 +18,8 @@ private:
     string* path;
     double value;
     mutex locker;
+    Interpreter *i = new Interpreter();
+    Expression *e = nullptr;
     // Will have the expression that we will have to evaluate
     //Expression expression;
 public:
