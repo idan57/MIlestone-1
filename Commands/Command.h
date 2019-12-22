@@ -9,6 +9,8 @@
 #include <iostream>
 #include <bits/stdc++.h>
 #include "../Expressions/Var.h"
+#include "Expression.h"
+#include "ex1.h"
 
 using namespace std;
 static bool initializedVars = false;
@@ -63,6 +65,9 @@ public:
 
     // Should be set in main via the method Extra::initializeDirectories()
     void SetDirectories(map<string*,int>* dirs) {this->directories = dirs;}
+    
+    bool Condition (double var, double val, string op);
+    Interpreter* setVar();
 };
 
 
