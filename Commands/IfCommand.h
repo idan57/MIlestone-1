@@ -7,6 +7,8 @@
 
 
 #include "Command.h"
+#include "Expression.h"
+#include "ex1.h"
 
 class IfCommand: public Command{
 public:
@@ -14,6 +16,7 @@ public:
     IfCommand* copy(vector<string>* inter) {
         return new IfCommand(inter);
     }
+    int execute();
 };
 
 
