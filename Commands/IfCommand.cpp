@@ -14,7 +14,7 @@ int IfCommand::execute() {
     vector<string>::iterator it;
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
-        numOfTokens++;
+
         if (*it == "{") {
             break;
         }
@@ -49,10 +49,8 @@ int IfCommand::execute() {
     exVar = this->setVar()->interpret(var);
     exVal = this->setVar()->interpret(val);
 
-    if (Condition(exVar->calculate(),exVal->calculate(),op)) {
-        return numOfTokens + 1;
+    if (!Condition(exVar->calculate(),exVal->calculate(),op)) {
+        vector<string *> *deleteParsed  = this->parse(numToExecute);
     }
-    else {
-        return numToExecute + 1;
-    }
+
 }
