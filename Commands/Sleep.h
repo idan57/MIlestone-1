@@ -14,6 +14,7 @@ public:
     Sleep* copy(vector<string>* inter) {
         return new Sleep(inter);
     }
+    int execute();
 };
 
 
