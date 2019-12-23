@@ -19,6 +19,7 @@ public:
     PrintCommand* copy(vector<string>* inter) {
         return new PrintCommand(inter);
     }
+    int execute();
 };
 
 
