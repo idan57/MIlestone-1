@@ -17,6 +17,7 @@ public:
     WhileCommand* copy(vector<string*>* inter) {
         return new WhileCommand(inter);
     }
+    int execute();
     void addVariablesToIter(Var* var);
 };
 
