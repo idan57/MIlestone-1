@@ -21,17 +21,17 @@ int IfCommand::execute() {
         numOfTokens++;
     }
 
-    vector<string *> *ifParsed = this->parse(numOfTokens);
+    vector<string> *ifParsed = this->parse(numOfTokens);
 
-    while ((*ifParsed->at(i) != "==") && (*ifParsed->at(i) != "!=") && (*ifParsed->at(i) != ">=")
-    && (*ifParsed->at(i) != "<=") && (*ifParsed->at(i) != ">") && (*ifParsed->at(i) != "<")) {
-        var += *ifParsed->at(i);
+    while ((ifParsed->at(i) != "==") && (ifParsed->at(i) != "!=") && (ifParsed->at(i) != ">=")
+    && (ifParsed->at(i) != "<=") && (ifParsed->at(i) != ">") && (ifParsed->at(i) != "<")) {
+        var += ifParsed->at(i);
         i++;
     }
-    string op = *ifParsed->at(i);
+    string op = ifParsed->at(i);
 
-    while (*ifParsed->at(i+1) != "{") {
-        val = *ifParsed->at(i+1);
+    while (ifParsed->at(i+1) != "{") {
+        val = ifParsed->at(i+1);
         i++;
     }
 
@@ -50,7 +50,7 @@ int IfCommand::execute() {
     exVal = this->setVar()->interpret(val);
 
     if (!Condition(exVar->calculate(),exVal->calculate(),op)) {
-        vector<string *> *deleteParsed  = this->parse(numToExecute);
+        vector<string > *deleteParsed  = this->parse(numToExecute);
     }
 
 }
