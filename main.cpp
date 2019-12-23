@@ -1,26 +1,17 @@
 #include <iostream>
-#include "Connection/server.h"
+#include "Interpreter/interpreter.h"
+#include "Commands/CommandCreator.h"
+
 using namespace std;
 
-int main() {
-    server* s = new server(5400,"127.0.0.1");
-    int i = s->CreateServer();
-    if (i != 1 ) {
-        return 1;
-    }
-    int client_connected = accept(s->GetServerSocket(),
-                                  (struct sockaddr*)s->GetServerAddress(),
-                                  (socklen_t*) s->GetServerAddress());
-    if (client_connected == -1) {
-        std::cerr<<"Error accepting client " << s->GetServerSocket() <<std::endl;
-        return 1;
-    }
-    close(s->GetServerSocket());
-    char buffer[1024] = {0};
-    int bytesRead = read(client_connected , buffer, 1024);
-    while (bytesRead > 0) {
-        cout << buffer << endl;
-        bytesRead = read(client_connected , buffer, 1024);
-    }
+int main(int argc, char* argv[]) {
+    interpreter* interpreter_flight = new interpreter(argv[1]);
+    vector<string>* interpeted;
+    CommandCreator* command_creator = new CommandCreator();
+    interpreter_flight->lexer();
+    interpeted = interpreter_flight->getTokens();
+    thread exec(&CommandCreator::Execution, command_creator, interpeted);
+    exec.join();
     return 0;
 }
+
