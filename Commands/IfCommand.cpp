@@ -39,10 +39,13 @@ int IfCommand::execute() {
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
 
         if (*it == "}") {
+            this->interperted->erase(it);
             break;
         }
         numToExecute++;
     }
+
+
 
     Expression *exVar = nullptr;
     Expression *exVal = nullptr;
@@ -50,7 +53,7 @@ int IfCommand::execute() {
     exVal = this->setVar()->interpret(val);
 
     if (!Condition(exVar->calculate(),exVal->calculate(),op)) {
-        vector<string > *deleteParsed  = this->parse(numToExecute);
+        vector<string > *deleteParsed  = this->parse(numToExecute - 1);
     }
 
 }
