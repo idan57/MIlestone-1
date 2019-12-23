@@ -25,13 +25,13 @@ void ConnectCommand::OpenClientConnection() {
     sockaddr_in address; //in means IP4
 
     // Get ("Address", port) parsed data
-    vector<string*>* clientInfo = this->parse(2);
-    string* IP = clientInfo->at(0);
-    int PORT = stod(*clientInfo->at(1));
+    vector<string>* clientInfo = this->parse(2);
+    string IP = clientInfo->at(0);
+    int PORT = stod(clientInfo->at(1));
 
     // Create Client
     this->clientConnection = new client();
-    int success = this->clientConnection->CreateClient(IP->c_str(), PORT);
+    int success = this->clientConnection->CreateClient(IP.c_str(), PORT);
     if (success != 1) {
         throw "Failed To Open Client\n";
     }

@@ -39,10 +39,10 @@ CommandCreator::CommandCreator() {
 
     // ElseCommand
     this->creator->insert({"else",
-                           new ElseCommand(defaultInterperted)});
+                           new IfCommand(defaultInterperted)});
 }
 
-void CommandCreator::Execution(vector<string> * inter) {
+void CommandCreator::Execution(vector<string>* inter) {
 
     // Iteration index
     int index = 0;
@@ -52,27 +52,23 @@ void CommandCreator::Execution(vector<string> * inter) {
 
     // Temporary Command variable
     Command* c;
-    auto iterToCreate = this->creator->begin();
-    int continueToNext = 0;
+    map<string, Command*>* variables_commands = new map<string, Command*>;
 
     // Iteration and creation of all commands in the program.
     while (index < numberOfInterated) {
-        c = this->creator->find(inter->at(index))->second;
+        c = this->creator->find(inter->at(index))->second->copy(inter);
         if (c != nullptr) {
-            continueToNext += c->execute();
+            if (inter->at(index).compare("var")) {
+                variables_commands->insert({inter->at(index + 1), c});
+            }
+            index += c->execute();
         }
 
         // It is an existing variable
         else {
-            // Update Variable from the map of variables
+            c = variables_commands->find(inter->at(index))->second;
+            index += c->execute();
         }
-        // Need to deal with a case where it is not a command
-        // Go to the next command to execute
-        while(continueToNext > 0) {
-            iterToCreate++;
-            continueToNext--;
-        }
-
-        continueToNext = 0;
     }
+
 }

@@ -11,7 +11,6 @@ interpreter::interpreter(string name) {
 }
 
 void interpreter::lexer() {
-
     ifstream input(this->filename);
     string line, token;
     size_t pos = 0;
@@ -80,7 +79,7 @@ void interpreter::lexer() {
                     token = line.substr(0, i);
                 }
                 token.erase(remove(token.begin(), token.end(), '\t'), token.end());
-                tokens->push_back(token);
+                this->tokens->push_back(token);
                 if (token == "=" || token == ">" || token == "<" || token == ">=" || token == "<=" ||
                 token == "!=" || token == "==") {
                     token = line.substr(i + 1, line.length() - i - 1);
@@ -108,8 +107,6 @@ void interpreter::lexer() {
     }
 }
 
-
-
-vector<string> *interpreter::getTokens() const {
+vector<string> *interpreter::getTokens() {
     return tokens;
 }

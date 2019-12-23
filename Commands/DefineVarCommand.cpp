@@ -3,7 +3,7 @@
 //
 
 #include "DefineVarCommand.h"
-#include "ex1.h"
+#include "../Expressions/ex1.h"
 #include <thread>
 #include <string>
 
@@ -24,7 +24,7 @@ int DefineVarCommand::execute() {
             auto iter = this->variables->begin();
             while (iter != this->variables->end()) {
                 if (*(iter->second->GetPath()) == val) {
-                   num = iter->second->GetValue();
+                    num = iter->second->GetValue();
 
                     break;
                 }
@@ -64,10 +64,3 @@ int DefineVarCommand::execute() {
         }
     }
 }
-
-
-
-
-
-
-

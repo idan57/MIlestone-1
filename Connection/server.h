@@ -26,6 +26,7 @@ public:
     int GetServerSocket() { return  this->server_socket;}
     int GetClientSocket() { return  this->client_socket;}
     void CreateConnection();
+    void close();
     sockaddr_in* GetServerAddress() { return  &this->serverAddress;}
 };
 

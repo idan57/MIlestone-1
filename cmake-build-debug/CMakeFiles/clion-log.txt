@@ -1,4 +1,4 @@
-/snap/clion/98/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1"
+/snap/clion/99/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1"
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug

@@ -15,7 +15,7 @@ public:
 
     interpreter(string name);
     void lexer();
-    vector<string> *getTokens() const;
+    vector<string>* getTokens();
 };
 
 

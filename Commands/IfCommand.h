@@ -7,8 +7,8 @@
 
 
 #include "Command.h"
-#include "Expression.h"
-#include "ex1.h"
+#include "../Expressions/Expression.h"
+#include "../Expressions/ex1.h"
 
 class IfCommand: public Command{
 public:

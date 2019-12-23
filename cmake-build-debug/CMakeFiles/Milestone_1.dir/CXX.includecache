@@ -13,20 +13,12 @@ iostream
 -
 bits/stdc++.h
 -
-
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp
-ConnectCommand.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
-
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
-Command.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 ../Expressions/Var.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
-../Connection/server.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
-../Connection/client.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
+../Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+../Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp
 OpenDataServer.h
@@ -50,20 +42,6 @@ chrono
 ../Expressions/Var.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
-sys/socket.h
--
-string
--
-iostream
--
-unistd.h
--
-netinet/in.h
--
-arpa/inet.h
--
-
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
 sys/socket.h
 -
@@ -78,11 +56,29 @@ netinet/in.h
 arpa/inet.h
 -
 
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp
-Var.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 iostream
+-
+mutex
+-
+map
+-
+Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+iostream
+-
+string
+-
+Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+bits/stdc++.h
+-
+string
 -
 

@@ -11,16 +11,12 @@
 class DefineVarCommand : public Command{
     int clientVar = 0;
     int serverVar = 0;
-
 public:
     DefineVarCommand(vector<string>* inter):Command(inter){}
     DefineVarCommand* copy(vector<string>* inter) {
         return new DefineVarCommand(inter);
     }
-    void UpdateVariable() {
-
-    }
+    int execute();
 };
-
 
 #endif //MILESTONE_1_DEFINEVARCOMMAND_H

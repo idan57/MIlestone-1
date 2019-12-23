@@ -5,9 +5,11 @@
 #ifndef MILESTONE1_EX1_H
 #define MILESTONE1_EX1_H
 
+#include <iostream>
 #include <string>
 #include "Expression.h"
 #include <bits/stdc++.h>
+#include <string>
 
 class BinaryOperator : public Expression{
 protected:

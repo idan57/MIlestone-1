@@ -90,6 +90,12 @@
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h">
 			<Option target="Milestone_1"/>
 		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h">
+			<Option target="Milestone_1"/>
+		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
@@ -102,6 +108,12 @@
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h">
+			<Option target="Milestone_1"/>
+		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
@@ -112,6 +124,12 @@
 			<Option target="Milestone_1"/>
 		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h">
 			<Option target="Milestone_1"/>
 		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.cpp">
@@ -138,10 +156,22 @@
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h">
 			<Option target="Milestone_1"/>
 		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h">
+			<Option target="Milestone_1"/>
+		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp">
+			<Option target="Milestone_1"/>
+		</Unit>
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h">
 			<Option target="Milestone_1"/>
 		</Unit>
 		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/main.cpp">

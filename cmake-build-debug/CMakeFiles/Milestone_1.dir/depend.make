@@ -3,23 +3,77 @@
 
 CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Commands/Command.cpp
 CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/CommandCreator.cpp
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/CommandCreator.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/ConnectCommand.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/DefineVarCommand.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/IfCommand.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/OpenDataServer.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/PrintCommand.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/Sleep.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/WhileCommand.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Connection/client.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Connection/server.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/ex1.h
 
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Commands/ConnectCommand.cpp
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Commands/ConnectCommand.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Connection/client.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Connection/server.h
+CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/ex1.h
 
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Commands/DefineVarCommand.cpp
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Commands/DefineVarCommand.h
+CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/IfCommand.cpp
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/IfCommand.h
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/ex1.h
 
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Commands/OpenDataServer.cpp
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Commands/OpenDataServer.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Connection/server.h
+CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.cpp
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.h
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Sleep.cpp
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Sleep.h
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Commands/WhileCommand.cpp
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Commands/WhileCommand.h
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/ex1.h
 
 CMakeFiles/Milestone_1.dir/Connection/client.cpp.o: ../Connection/client.cpp
 CMakeFiles/Milestone_1.dir/Connection/client.cpp.o: ../Connection/client.h
@@ -27,9 +81,35 @@ CMakeFiles/Milestone_1.dir/Connection/client.cpp.o: ../Connection/client.h
 CMakeFiles/Milestone_1.dir/Connection/server.cpp.o: ../Connection/server.cpp
 CMakeFiles/Milestone_1.dir/Connection/server.cpp.o: ../Connection/server.h
 
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: ../Expressions/Var.cpp
 CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o: ../Expressions/ex1.h
 
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o: ../Expressions/ex1.cpp
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o: ../Expressions/ex1.h
+
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o: ../Extra\ Methods/Extra.cpp
+CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o: ../Extra\ Methods/Extra.h
+
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: ../Interpreter/interpreter.cpp
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: ../Interpreter/interpreter.h
+
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/Command.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/CommandCreator.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/ConnectCommand.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/DefineVarCommand.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/IfCommand.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/OpenDataServer.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/PrintCommand.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/Sleep.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/WhileCommand.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Connection/client.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Connection/server.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Expressions/ex1.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../Interpreter/interpreter.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../main.cpp
 

@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = "/home/idan/Desktop/Advanced Programming/Milestone 1/Mileston
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/snap/clion/99/bin/cmake/linux/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/snap/clion/98/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/snap/clion/99/bin/cmake/linux/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -150,6 +150,33 @@ Commands/Command.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/Command.cpp.s
 .PHONY : Commands/Command.cpp.s
 
+Commands/CommandCreator.o: Commands/CommandCreator.cpp.o
+
+.PHONY : Commands/CommandCreator.o
+
+# target to build an object file
+Commands/CommandCreator.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o
+.PHONY : Commands/CommandCreator.cpp.o
+
+Commands/CommandCreator.i: Commands/CommandCreator.cpp.i
+
+.PHONY : Commands/CommandCreator.i
+
+# target to preprocess a source file
+Commands/CommandCreator.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.i
+.PHONY : Commands/CommandCreator.cpp.i
+
+Commands/CommandCreator.s: Commands/CommandCreator.cpp.s
+
+.PHONY : Commands/CommandCreator.s
+
+# target to generate assembly for a file
+Commands/CommandCreator.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.s
+.PHONY : Commands/CommandCreator.cpp.s
+
 Commands/ConnectCommand.o: Commands/ConnectCommand.cpp.o
 
 .PHONY : Commands/ConnectCommand.o
@@ -204,6 +231,33 @@ Commands/DefineVarCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.s
 .PHONY : Commands/DefineVarCommand.cpp.s
 
+Commands/IfCommand.o: Commands/IfCommand.cpp.o
+
+.PHONY : Commands/IfCommand.o
+
+# target to build an object file
+Commands/IfCommand.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o
+.PHONY : Commands/IfCommand.cpp.o
+
+Commands/IfCommand.i: Commands/IfCommand.cpp.i
+
+.PHONY : Commands/IfCommand.i
+
+# target to preprocess a source file
+Commands/IfCommand.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.i
+.PHONY : Commands/IfCommand.cpp.i
+
+Commands/IfCommand.s: Commands/IfCommand.cpp.s
+
+.PHONY : Commands/IfCommand.s
+
+# target to generate assembly for a file
+Commands/IfCommand.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.s
+.PHONY : Commands/IfCommand.cpp.s
+
 Commands/OpenDataServer.o: Commands/OpenDataServer.cpp.o
 
 .PHONY : Commands/OpenDataServer.o
@@ -257,6 +311,33 @@ Commands/PrintCommand.s: Commands/PrintCommand.cpp.s
 Commands/PrintCommand.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.s
 .PHONY : Commands/PrintCommand.cpp.s
+
+Commands/Sleep.o: Commands/Sleep.cpp.o
+
+.PHONY : Commands/Sleep.o
+
+# target to build an object file
+Commands/Sleep.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o
+.PHONY : Commands/Sleep.cpp.o
+
+Commands/Sleep.i: Commands/Sleep.cpp.i
+
+.PHONY : Commands/Sleep.i
+
+# target to preprocess a source file
+Commands/Sleep.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.i
+.PHONY : Commands/Sleep.cpp.i
+
+Commands/Sleep.s: Commands/Sleep.cpp.s
+
+.PHONY : Commands/Sleep.s
+
+# target to generate assembly for a file
+Commands/Sleep.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.s
+.PHONY : Commands/Sleep.cpp.s
 
 Commands/WhileCommand.o: Commands/WhileCommand.cpp.o
 
@@ -366,6 +447,33 @@ Expressions/Var.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.s
 .PHONY : Expressions/Var.cpp.s
 
+Expressions/ex1.o: Expressions/ex1.cpp.o
+
+.PHONY : Expressions/ex1.o
+
+# target to build an object file
+Expressions/ex1.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o
+.PHONY : Expressions/ex1.cpp.o
+
+Expressions/ex1.i: Expressions/ex1.cpp.i
+
+.PHONY : Expressions/ex1.i
+
+# target to preprocess a source file
+Expressions/ex1.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.i
+.PHONY : Expressions/ex1.cpp.i
+
+Expressions/ex1.s: Expressions/ex1.cpp.s
+
+.PHONY : Expressions/ex1.s
+
+# target to generate assembly for a file
+Expressions/ex1.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.s
+.PHONY : Expressions/ex1.cpp.s
+
 Extra_Methods/Extra.o: Extra_Methods/Extra.cpp.o
 
 .PHONY : Extra_Methods/Extra.o
@@ -392,6 +500,33 @@ Extra_Methods/Extra.s: Extra_Methods/Extra.cpp.s
 Extra_Methods/Extra.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.s
 .PHONY : Extra_Methods/Extra.cpp.s
+
+Interpreter/interpreter.o: Interpreter/interpreter.cpp.o
+
+.PHONY : Interpreter/interpreter.o
+
+# target to build an object file
+Interpreter/interpreter.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o
+.PHONY : Interpreter/interpreter.cpp.o
+
+Interpreter/interpreter.i: Interpreter/interpreter.cpp.i
+
+.PHONY : Interpreter/interpreter.i
+
+# target to preprocess a source file
+Interpreter/interpreter.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.i
+.PHONY : Interpreter/interpreter.cpp.i
+
+Interpreter/interpreter.s: Interpreter/interpreter.cpp.s
+
+.PHONY : Interpreter/interpreter.s
+
+# target to generate assembly for a file
+Interpreter/interpreter.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.s
+.PHONY : Interpreter/interpreter.cpp.s
 
 main.o: main.cpp.o
 
@@ -432,18 +567,27 @@ help:
 	@echo "... Commands/Command.o"
 	@echo "... Commands/Command.i"
 	@echo "... Commands/Command.s"
+	@echo "... Commands/CommandCreator.o"
+	@echo "... Commands/CommandCreator.i"
+	@echo "... Commands/CommandCreator.s"
 	@echo "... Commands/ConnectCommand.o"
 	@echo "... Commands/ConnectCommand.i"
 	@echo "... Commands/ConnectCommand.s"
 	@echo "... Commands/DefineVarCommand.o"
 	@echo "... Commands/DefineVarCommand.i"
 	@echo "... Commands/DefineVarCommand.s"
+	@echo "... Commands/IfCommand.o"
+	@echo "... Commands/IfCommand.i"
+	@echo "... Commands/IfCommand.s"
 	@echo "... Commands/OpenDataServer.o"
 	@echo "... Commands/OpenDataServer.i"
 	@echo "... Commands/OpenDataServer.s"
 	@echo "... Commands/PrintCommand.o"
 	@echo "... Commands/PrintCommand.i"
 	@echo "... Commands/PrintCommand.s"
+	@echo "... Commands/Sleep.o"
+	@echo "... Commands/Sleep.i"
+	@echo "... Commands/Sleep.s"
 	@echo "... Commands/WhileCommand.o"
 	@echo "... Commands/WhileCommand.i"
 	@echo "... Commands/WhileCommand.s"
@@ -456,9 +600,15 @@ help:
 	@echo "... Expressions/Var.o"
 	@echo "... Expressions/Var.i"
 	@echo "... Expressions/Var.s"
+	@echo "... Expressions/ex1.o"
+	@echo "... Expressions/ex1.i"
+	@echo "... Expressions/ex1.s"
 	@echo "... Extra_Methods/Extra.o"
 	@echo "... Extra_Methods/Extra.i"
 	@echo "... Extra_Methods/Extra.s"
+	@echo "... Interpreter/interpreter.o"
+	@echo "... Interpreter/interpreter.i"
+	@echo "... Interpreter/interpreter.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

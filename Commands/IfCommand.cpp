@@ -24,7 +24,7 @@ int IfCommand::execute() {
     vector<string> *ifParsed = this->parse(numOfTokens);
 
     while ((ifParsed->at(i) != "==") && (ifParsed->at(i) != "!=") && (ifParsed->at(i) != ">=")
-    && (ifParsed->at(i) != "<=") && (ifParsed->at(i) != ">") && (ifParsed->at(i) != "<")) {
+           && (ifParsed->at(i) != "<=") && (ifParsed->at(i) != ">") && (ifParsed->at(i) != "<")) {
         var += ifParsed->at(i);
         i++;
     }

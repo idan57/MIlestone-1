@@ -9,8 +9,8 @@
 #include <iostream>
 #include <bits/stdc++.h>
 #include "../Expressions/Var.h"
-#include "Expression.h"
-#include "ex1.h"
+#include "../Expressions/Expression.h"
+#include "../Expressions/ex1.h"
 
 using namespace std;
 static bool initializedVars = false;
@@ -20,8 +20,8 @@ static bool initializedVars = false;
 class Command {
 private:
     mutex locker;
-    vector<string>* interperted; // the vector of data after interpretation
 protected:
+    vector<string>* interperted; // the vector of data after interpretation
     map<string*,Var*>* variables;
 
     // Map of directories - static so any instance will be able to get the
@@ -52,7 +52,7 @@ public:
     virtual Command* copy(vector<string>* inter) = 0; // method for all
     // commands to
     // override
-    vector<string*>* parse(int n);
+    vector<string>* parse(int n);
     vector<double>* splitNums(char* data, char delimeter);
 
 

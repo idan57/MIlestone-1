@@ -34,10 +34,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /snap/clion/98/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /snap/clion/99/bin/cmake/linux/bin/cmake
 
 # The command to remove a file.
-RM = /snap/clion/98/bin/cmake/linux/bin/cmake -E remove -f
+RM = /snap/clion/99/bin/cmake/linux/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -200,6 +200,71 @@ CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp" -o CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.s
 
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/CommandCreator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp"
+
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp" > CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.i
+
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp" -o CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.s
+
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Sleep.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp"
+
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp" > CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.i
+
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp" -o CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.s
+
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/IfCommand.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp"
+
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp" > CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.i
+
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp" -o CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.s
+
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: ../Interpreter/interpreter.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp"
+
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp" > CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.i
+
+CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp" -o CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.s
+
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o: CMakeFiles/Milestone_1.dir/flags.make
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o: ../Expressions/ex1.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o -c "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp"
+
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp" > CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.i
+
+CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp" -o CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.s
+
 # Object files for target Milestone_1
 Milestone_1_OBJECTS = \
 "CMakeFiles/Milestone_1.dir/main.cpp.o" \
@@ -212,7 +277,12 @@ Milestone_1_OBJECTS = \
 "CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o" \
 "CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o" \
 "CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o" \
-"CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o"
+"CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o" \
+"CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o"
 
 # External object files for target Milestone_1
 Milestone_1_EXTERNAL_OBJECTS =
@@ -228,9 +298,14 @@ Milestone_1: CMakeFiles/Milestone_1.dir/Expressions/Var.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o
+Milestone_1: CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o
 Milestone_1: CMakeFiles/Milestone_1.dir/build.make
 Milestone_1: CMakeFiles/Milestone_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_12) "Linking CXX executable Milestone_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_17) "Linking CXX executable Milestone_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Milestone_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

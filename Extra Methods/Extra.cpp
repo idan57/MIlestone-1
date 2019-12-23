@@ -14,6 +14,21 @@ map<string*,int>* Extra::initializeDirectories() {
     directories->insert({dir, index});
     index++;
 
+    // time_warp
+    dir = new string("/sim/time/warp");
+    directories->insert({dir, index});
+    index++;
+
+    // switches_magnetos
+    dir = new string("/controls/switches/magnetos");
+    directories->insert({dir, index});
+    index++;
+
+    // heading-indicator_offset-deg
+    dir = new string("/instrumentation/heading-indicator/offset-deg");
+    directories->insert({dir, index});
+    index++;
+
     // altimeter_indicated-altitude-ft
     dir = new string("/instrumentation/altimeter/indicated-altitude-ft");
     directories->insert({dir, index});
@@ -75,7 +90,6 @@ map<string*,int>* Extra::initializeDirectories() {
     directories->insert({dir, index});
     index++;
 
-
     // magnetic-compass_indicated-heading-deg
     dir = new string("/instrumentation/magnetic-compass/indicated-heading-deg");
     directories->insert({dir, index});
@@ -119,6 +133,56 @@ map<string*,int>* Extra::initializeDirectories() {
 
     // engine_throttle
     dir = new string("/controls/engines/engine/throttle");
+    directories->insert({dir, index});
+    index++;
+
+    // current-engine_throttle
+    dir = new string("/controls/engines/current-engine/throttle");
+    directories->insert({dir, index});
+    index++;
+
+    // switches_master-avionics
+    dir = new string("/controls/switches/master-avionics");
+    directories->insert({dir, index});
+    index++;
+
+    // switches_starter
+    dir = new string("/controls/switches/starter");
+    directories->insert({dir, index});
+    index++;
+
+    // active-engine_auto-start
+    dir = new string("/engines/active-engine/auto-start");
+    directories->insert({dir, index});
+    index++;
+
+    // flight_speedbrake
+    dir = new string("/controls/flight/speedbrake");
+    directories->insert({dir, index});
+    index++;
+
+    // c172p_brake-parking
+    dir = new string("/sim/model/c172p/brake-parking");
+    directories->insert({dir, index});
+    index++;
+
+    // engine_primer
+    dir = new string("/controls/engines/engine/primer");
+    directories->insert({dir, index});
+    index++;
+
+    // current-engine_mixture
+    dir = new string("/controls/engines/current-engine/mixture");
+    directories->insert({dir, index});
+    index++;
+
+    // switches_master-bat
+    dir = new string("/controls/switches/master-bat");
+    directories->insert({dir, index});
+    index++;
+
+    // switches_master-alt
+    dir = new string("/controls/switches/master-alt");
     directories->insert({dir, index});
     index++;
 

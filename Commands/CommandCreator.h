@@ -14,7 +14,6 @@
 #include "DefineVarCommand.h"
 #include "Sleep.h"
 #include "IfCommand.h"
-#include "ElseCommand.h"
 
 using namespace std;
 

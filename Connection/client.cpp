@@ -51,3 +51,9 @@ int client::SendData(const char * data) {
     }
     return 1;
 }
+
+int client::readFromServer() {
+    char buffer[1024] = {0};
+    int valread = read( client_socket , buffer, 1024);
+    return valread;
+}

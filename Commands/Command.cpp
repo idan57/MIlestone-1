@@ -1,14 +1,11 @@
 // Parses the text we lexered beforehand until the index n.
 #include "Command.h"
 
-
-
-
 vector<string>* Command::parse(int n) {
     // The parsed data in a vector.
     vector<string>* parsed = new vector<string>;
     int i = 0;
-    for(auto curr = (*this->interperted).begin(); i <= n; i++, curr++) {
+    for(auto curr = (*this->interperted).begin(); i <= n; i++) {
         parsed->push_back(*curr);
         (*this->interperted).erase(this->interperted->begin());
     }
@@ -94,11 +91,3 @@ Interpreter* Command::setVar() {
     i->setVariables(setVar);
     return i;
 }
-
-
-
-
-
-
-
-

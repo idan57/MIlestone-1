@@ -8,10 +8,10 @@
 int OpenDataServer::execute() {
 
     // Parse the vector of parsed data
-    vector<string*>* parsed = this->parse(1);
-
+    vector<string>* parsed = this->parse(1);
+    cout << parsed->at(1) << endl;
     // Get The port's value
-    int port = stoi(**parsed->begin());
+    int port = stoi(parsed->at(1));
 
     // Open server as a thread
     thread serverOpen(&OpenDataServer::OpenServerConnection, this, port);
@@ -33,7 +33,7 @@ void OpenDataServer::OpenServerConnection(int port) {
     this->StartReading();
 }
 
-void OpenDataServer::StartReading(){
+void OpenDataServer::StartReading() {
 
     // Waiting for a client connection
     int client_connected = accept(this->serverConnection->GetServerSocket(),
@@ -51,6 +51,7 @@ void OpenDataServer::StartReading(){
     // Start reading in background after the method ended
     serverReading.detach();
 }
+
 void OpenDataServer::ReadingMode(int client_connected) {
 
     // Data we get from the simulator
