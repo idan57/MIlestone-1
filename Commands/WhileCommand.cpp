@@ -15,10 +15,11 @@ int WhileCommand::execute() {
     vector<string>::iterator it;
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
-        whileInterperted->push_back(*it);
+
         if (*it == "}") {
             break;
         }
+        whileInterperted->push_back(*it);
     }
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
@@ -46,6 +47,7 @@ int WhileCommand::execute() {
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
 
         if (*it == "}") {
+            this->interperted->erase(it);
             break;
         }
         numToExecute++;
@@ -62,4 +64,6 @@ int WhileCommand::execute() {
     else {
         vector<string> *deleteParsed  = this->parse(numToExecute);
     }
+
+
 }
