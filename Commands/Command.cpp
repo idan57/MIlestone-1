@@ -40,7 +40,7 @@ void Command::UpdateVariables(vector<double>* updatedVars, char SerOrCli) {
     if (SerOrCli == 's') {
         int serverLen = this->ServerUpdate->size();
         for(int i = 0; i < serverLen; i++) {
-            string* dirToUpdate = (*this->ServerUpdate)[i];
+            string dirToUpdate = (*this->ServerUpdate)[i];
             int locationOfNewVal = (*this->directories)[dirToUpdate];
             (*this->variables)[dirToUpdate]->SetValue
                     ((*updatedVars)[locationOfNewVal]);
@@ -84,7 +84,7 @@ Interpreter* Command::setVar() {
     string setVar = "";
     auto itr = this->variables->begin();
     while (itr != this->variables->end()) {
-        tempVar = *itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
+        tempVar = itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
         setVar += tempVar;
         itr++;
     }

@@ -8,9 +8,9 @@
 #include <iostream>
 #include <map>
 using namespace std;
-
 class Extra {
-static map<string*,int>* initializeDirectories();
+public:
+    static map<string*,int>* initializeDirectories();
 };
 
 

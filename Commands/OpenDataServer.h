@@ -13,6 +13,8 @@
 #include <pthread.h>
 #include <chrono>
 #include "../Expressions/Var.h"
+#include "../Extra Methods/Extra.h"
+
 using namespace std;
 
 class OpenDataServer: public Command {
@@ -25,9 +27,10 @@ public:
     }
     int execute();
     void OpenServerConnection(int port);
-    void ReadingMode(int client_connected);
-    void StartReading();
+    void ReadingMode(int client_connected ,bool* there_are_more_commands);
     void ChangeMap(char* dataFromSim);
+    server* getServerConnection() {return serverConnection;}
+    ~OpenDataServer();
 };
 
 

@@ -12,17 +12,6 @@ int client::CreateClient(const char * destAddr, int port) {
 
     // Creating the address of the server we wish to connect to.
     this->CreateDestAddress(destAddr, port);
-
-    // Create connection with server.
-    int connection = connect(this->client_socket,
-            (struct sockaddr *)&this->destAddress,
-            sizeof(this->destAddress));
-    if (connection == -1) {
-        std::cerr << "Could not connect to host server"<<std::endl;
-        return -2; // failed to connect to server
-    } else {
-        std::cout<<"Client is now connected to server" <<std::endl;
-    }
     return 1; // opened socket and established connection with server
 }
 
@@ -33,12 +22,11 @@ void client::CreateDestAddress(const char *addr, int port) {
 }
 
 int client::ConnectToServer(struct sockaddr_in server_address) {
-    int is_connect = connect(this->client_socket,
-                             (struct sockaddr *)&server_address,
-                             sizeof(server_address));
-    if (is_connect == -1) {
-        std::cerr << "Could not connect to host server" << std::endl;
-        return -2;
+    int is_connect = -1;
+    while (is_connect == -1) {
+        is_connect = connect(this->client_socket,
+                                 (struct sockaddr *) &server_address,
+                                 sizeof(server_address));
     }
     return 1;
 }

@@ -26,8 +26,6 @@ private:
 
     // The socket created for our program for connection
     client* clientConnection;
-
-
 public:
     ConnectCommand(vector<string>* inter):Command(inter){}
     ConnectCommand* copy(vector<string>* inter) {
@@ -35,7 +33,10 @@ public:
     }
     int execute();
     void OpenClientConnection();
-    void UpdatingMode(sockaddr_in server_address);
+    void UpdatingMode(sockaddr_in server_address,
+            bool* there_are_more_commands);
+    client* getClientConnection() { return clientConnection; }
+    ~ConnectCommand();
 };
 
 

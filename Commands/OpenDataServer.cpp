@@ -3,13 +3,12 @@
 //
 
 #include "OpenDataServer.h"
-
+#include "../Extra Methods/Extra.h"
 
 int OpenDataServer::execute() {
 
     // Parse the vector of parsed data
     vector<string>* parsed = this->parse(1);
-    cout << parsed->at(1) << endl;
     // Get The port's value
     int port = stoi(parsed->at(1));
 
@@ -29,46 +28,21 @@ void OpenDataServer::OpenServerConnection(int port) {
     // Create server connection
     int server_socket = this->serverConnection->CreateServer();
 
-    // Start getting info
-    this->StartReading();
+    this->serverConnection->CreateConnection();
 }
 
-void OpenDataServer::StartReading() {
-
-    // Waiting for a client connection
-    int client_connected = accept(this->serverConnection->GetServerSocket(),
-                                  (struct sockaddr*)this->serverConnection->GetServerAddress(),
-                                  (socklen_t*) this->serverConnection->GetServerAddress());
-    if (client_connected == -1) {
-        std::cerr<<"Error accepting client"<<std::endl;
-        return;
-    }
-
-    // Created connection, now getting data from the simulator in a thread
-    // and dealing with the data
-    thread serverReading(&OpenDataServer::ReadingMode, this, client_connected);
-
-    // Start reading in background after the method ended
-    serverReading.detach();
-}
-
-void OpenDataServer::ReadingMode(int client_connected) {
-
-    // Data we get from the simulator
+void OpenDataServer::ReadingMode(int client_connected ,bool*
+there_are_more_commands) {
     char dataFromSim[1024] = {0};
-    int bytesRead = read(client_connected , dataFromSim, 1024);
-
-    // Getting data until there is no data to receive (simulator closed)
-    while (bytesRead > 0) {
+    while(*there_are_more_commands) {
+        int bytesRead = read(client_connected , dataFromSim, 1024);
         ChangeMap(dataFromSim);
-        bytesRead = read(client_connected , dataFromSim, 1024);
     }
 }
 void OpenDataServer::ChangeMap(char* dataFromSim) {
 
     // Split data by ','
     vector<double>* dataToUpdate = splitNums(dataFromSim, ',');
-
 
     // Update the variables accordingly
     this->UpdateVariables(dataToUpdate, 's');

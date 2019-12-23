@@ -23,7 +23,7 @@ private:
 public:
     CommandCreator();
     Command* Create();
-    void Execution(vector<string>* inter);
+    map<string, Command*>* getCreator(){return creator;}
 };
 
 

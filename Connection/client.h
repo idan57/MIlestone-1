@@ -6,6 +6,7 @@
 #include <unistd.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+using  namespace std;
 #define LOCAL_HOST "127.0.0.1"
 
 class client {

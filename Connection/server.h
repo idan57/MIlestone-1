@@ -4,12 +4,14 @@
 
 #ifndef MILESTONE_1_SERVER_H
 #define MILESTONE_1_SERVER_H
+#include <iostream>
 #include <sys/socket.h>
 #include <string>
-#include <iostream>
 #include <unistd.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+
+using namespace std;
 #define MAXLISTEN 20
 
 class server {
@@ -26,7 +28,6 @@ public:
     int GetServerSocket() { return  this->server_socket;}
     int GetClientSocket() { return  this->client_socket;}
     void CreateConnection();
-    void close();
     sockaddr_in* GetServerAddress() { return  &this->serverAddress;}
 };
 

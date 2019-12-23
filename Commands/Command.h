@@ -11,6 +11,7 @@
 #include "../Expressions/Var.h"
 #include "../Expressions/Expression.h"
 #include "../Expressions/ex1.h"
+#include "../Extra Methods/Extra.h"
 
 using namespace std;
 static bool initializedVars = false;
@@ -21,20 +22,21 @@ class Command {
 private:
     mutex locker;
 protected:
+    bool* there_are_commands;
     vector<string>* interperted; // the vector of data after interpretation
-    map<string*,Var*>* variables;
+    map<string,Var*>* variables;
 
     // Map of directories - static so any instance will be able to get the
     // same field
-     map<string*,int>* directories;
+     map<string, int>* directories;
 
     // All vars that need to be updated via my server - static so any
     // instance will be able to get the same field
-     map<int, string*>* ServerUpdate;
+     map<int, string>* ServerUpdate;
 
     // All vars that need to be updated via my client - static so any
     // instance will be able to get the same field
-     map<int, string*>* ClientUpdate;
+     map<int, string>* ClientUpdate;
 
 public:
     Command(vector<string>* inter) {
@@ -43,8 +45,8 @@ public:
     }
     void IntializeVarsServ() {
         if (!(initializedVars)) {
-            this->ServerUpdate = new map<int, string *>;
-            this->ClientUpdate = new map<int, string *>;
+            this->ServerUpdate = new map<int, string>;
+            this->ClientUpdate = new map<int, string>;
             initializedVars = true;
         }
     }
@@ -57,14 +59,14 @@ public:
 
 
     // Set the variables the commands should update
-    void AddToVariablesField (pair<string*,Var*>* var){
+    void AddToVariablesField (pair<string,Var*>* var){
         this->variables->insert({var->first, var->second});
     }
 
     void UpdateVariables(vector<double>* updatedVars, char SerOrCli);
 
     // Should be set in main via the method Extra::initializeDirectories()
-    void SetDirectories(map<string*,int>* dirs) {this->directories = dirs;}
+    void SetDirectories(map<string, int>* dirs) {this->directories = dirs;}
     
     bool Condition (double var, double val, string op);
     Interpreter* setVar();

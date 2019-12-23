@@ -15,7 +15,7 @@ using namespace std;
 
 class Var {
 private:
-    string* path;
+    string path;
     double value;
     mutex locker;
     Interpreter *i = new Interpreter();
@@ -23,9 +23,9 @@ private:
     // Will have the expression that we will have to evaluate
     //Expression expression;
 public:
-    Var(string* p, double val):path(p),value(val){}
-    void SetPath(string* p) {this->path = p;}
-    string* GetPath() { return this->path;}
+    Var(string p, double val):path(p),value(val){}
+    void SetPath(string p) {this->path = p;}
+    string GetPath() { return this->path;}
     void SetValue(double val) {        
         this->value = val;       
     }
@@ -38,13 +38,14 @@ public:
         locker.unlock();
         return val;
     }
-    void InterpretVar(string var, string valToInter, map<string*,Var*>* variables) {
+    void InterpretVar(string var, string valToInter, map<string,Var*>*
+            variables) {
         locker.lock();
         string tempVar = nullptr;
         string setVar = "";
         auto itr = variables->begin();
         while (itr != variables->end()) {
-            tempVar = *itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
+            tempVar = itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
             setVar += tempVar;
             itr++;
         }
@@ -52,7 +53,7 @@ public:
         e = i->interpret(valToInter);
         auto it = variables->begin();
         while (it != variables->end()) {
-            if (*(it->second->GetPath()) == var) {
+            if ((it->second->GetPath()) == var) {
                 it->second->SetValue(e->calculate());
                 break;
             }
