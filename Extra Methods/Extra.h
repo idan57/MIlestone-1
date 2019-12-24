@@ -10,7 +10,7 @@
 using namespace std;
 class Extra {
 public:
-    static map<string*,int>* initializeDirectories();
+    static map<string,int>* initializeDirectories();
 };
 
 

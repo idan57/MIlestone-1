@@ -17,5 +17,5 @@ add_executable(Milestone_1 "main.cpp" "Connection/server.cpp"
         "Commands/Sleep.cpp"  "Commands/Sleep.h" "Commands/IfCommand.cpp"
         "Commands/IfCommand.h" "Interpreter/interpreter.cpp"
         "Interpreter/interpreter.h"
-        "Expressions/ex1.cpp" )
+        "Expressions/ex1.cpp" SymbolTable/SymbolTable.cpp SymbolTable/SymbolTable.h)
 target_link_libraries(Milestone_1 ${CMAKE_THREAD_LIBS_INIT})

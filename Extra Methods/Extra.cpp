@@ -3,7 +3,7 @@
 //
 
 #include "Extra.h"
-map<string*,int>* Extra::initializeDirectories() {
+map<string,int>* Extra::initializeDirectories() {
     map<string*,int>* directories = new map<string*,int>;
     string* dir;
     int index = 0;

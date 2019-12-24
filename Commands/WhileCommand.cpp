@@ -64,6 +64,4 @@ int WhileCommand::execute() {
     else {
         vector<string> *deleteParsed  = this->parse(numToExecute);
     }
-
-
 }

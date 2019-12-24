@@ -7,6 +7,7 @@ CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Commands/CommandCreator.cpp
@@ -24,6 +25,7 @@ CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/Express
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Commands/ConnectCommand.cpp
@@ -34,6 +36,7 @@ CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/Express
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Commands/DefineVarCommand.cpp
@@ -42,6 +45,7 @@ CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/Expre
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Commands/IfCommand.cpp
@@ -50,6 +54,7 @@ CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Commands/OpenDataServer.cpp
@@ -59,6 +64,7 @@ CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/Express
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Commands/PrintCommand.cpp
@@ -67,6 +73,7 @@ CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/Expressio
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Commands/Sleep.cpp
@@ -75,6 +82,7 @@ CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/Expression.h
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Commands/WhileCommand.cpp
@@ -83,6 +91,7 @@ CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/Expressio
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o: ../SymbolTable/SymbolTable.h
 
 CMakeFiles/Milestone_1.dir/Connection/client.cpp.o: ../Connection/client.cpp
 CMakeFiles/Milestone_1.dir/Connection/client.cpp.o: ../Connection/client.h
@@ -105,6 +114,13 @@ CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o: ../Extra\ Methods/Extra.h
 CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: ../Interpreter/interpreter.cpp
 CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o: ../Interpreter/interpreter.h
 
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../Expressions/Expression.h
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../Expressions/Var.h
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../Expressions/ex1.h
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../Extra\ Methods/Extra.h
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../SymbolTable/SymbolTable.cpp
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o: ../SymbolTable/SymbolTable.h
+
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/Command.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/CommandCreator.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Commands/ConnectCommand.h
@@ -121,5 +137,6 @@ CMakeFiles/Milestone_1.dir/main.cpp.o: ../Expressions/Var.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Expressions/ex1.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Extra\ Methods/Extra.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../Interpreter/interpreter.h
+CMakeFiles/Milestone_1.dir/main.cpp.o: ../SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/main.cpp.o: ../main.cpp
 

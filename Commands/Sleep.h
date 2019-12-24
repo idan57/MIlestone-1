@@ -10,9 +10,9 @@
 
 class Sleep: public Command {
 public:
-    Sleep(vector<string>* inter):Command(inter){}
-    Sleep* copy(vector<string>* inter) {
-        return new Sleep(inter);
+    Sleep(vector<string>* inter, SymbolTable* symT):Command(inter, symT){}
+    Sleep* copy(vector<string>* inter, SymbolTable* symT) {
+        return new Sleep(inter, symT);
     }
     int execute();
 };

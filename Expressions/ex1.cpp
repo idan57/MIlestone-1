@@ -403,7 +403,6 @@ void Interpreter::setVariables(string s) {
     for (ptr = result.begin(); ptr < result.end(); ptr++) {
 
         string temp = *ptr;
-        //cout <<temp ;
         if (temp.length() < 3 || !((temp[0] >= 'a' && temp[0] <= 'z') || (temp[0] >= 'A' && temp[0] <= 'Z') || (temp[0] == '_')))
         {
 

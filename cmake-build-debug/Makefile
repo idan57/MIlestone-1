@@ -528,6 +528,33 @@ Interpreter/interpreter.cpp.s:
 	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.s
 .PHONY : Interpreter/interpreter.cpp.s
 
+SymbolTable/SymbolTable.o: SymbolTable/SymbolTable.cpp.o
+
+.PHONY : SymbolTable/SymbolTable.o
+
+# target to build an object file
+SymbolTable/SymbolTable.cpp.o:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o
+.PHONY : SymbolTable/SymbolTable.cpp.o
+
+SymbolTable/SymbolTable.i: SymbolTable/SymbolTable.cpp.i
+
+.PHONY : SymbolTable/SymbolTable.i
+
+# target to preprocess a source file
+SymbolTable/SymbolTable.cpp.i:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.i
+.PHONY : SymbolTable/SymbolTable.cpp.i
+
+SymbolTable/SymbolTable.s: SymbolTable/SymbolTable.cpp.s
+
+.PHONY : SymbolTable/SymbolTable.s
+
+# target to generate assembly for a file
+SymbolTable/SymbolTable.cpp.s:
+	$(MAKE) -f CMakeFiles/Milestone_1.dir/build.make CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.s
+.PHONY : SymbolTable/SymbolTable.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -609,6 +636,9 @@ help:
 	@echo "... Interpreter/interpreter.o"
 	@echo "... Interpreter/interpreter.i"
 	@echo "... Interpreter/interpreter.s"
+	@echo "... SymbolTable/SymbolTable.o"
+	@echo "... SymbolTable/SymbolTable.i"
+	@echo "... SymbolTable/SymbolTable.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

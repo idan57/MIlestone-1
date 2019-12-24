@@ -27,9 +27,10 @@ private:
     // The socket created for our program for connection
     client* clientConnection;
 public:
-    ConnectCommand(vector<string>* inter):Command(inter){}
-    ConnectCommand* copy(vector<string>* inter) {
-        return new ConnectCommand(inter);
+    ConnectCommand(vector<string>* inter, SymbolTable* symT):Command(inter,
+            symT){}
+    ConnectCommand* copy(vector<string>* inter,SymbolTable* symT) {
+        return new ConnectCommand(inter, symT);
     }
     int execute();
     void OpenClientConnection();

@@ -21,7 +21,7 @@ void ConnectCommand::OpenClientConnection() {
     // Get ("Address", port) parsed data
     vector<string>* clientInfo = this->parse(2);
     string IP = clientInfo->at(1);
-    int PORT = stod(clientInfo->at(2));
+    int PORT = stoi(clientInfo->at(2));
 
     // Create Client
     this->clientConnection = new client();
@@ -44,13 +44,13 @@ void ConnectCommand::UpdatingMode(sockaddr_in server_address, bool
     while (there_are_more_commands) {
 
         // Generate new data to send to
-        for (auto dir = this->ClientUpdate->begin();
-             dir != this->ClientUpdate->end(); dir++) {
+        for (auto dir = symbolTable->ClientUpdate->begin();
+             dir != symbolTable->ClientUpdate->end(); dir++) {
             stringstream newVals;
 
             // We generate a string in the generic server_small.xml format
             newVals << "set " << dir->second << " " <<
-            this->variables->at(dir->second)->GetValue() << "\n";
+            symbolTable->variables->at(dir->second)->GetValue() << "\n";
 
             // Get the generated string
             string dataToUpdate = newVals.str();

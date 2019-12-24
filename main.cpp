@@ -23,26 +23,29 @@ int main(int argc, char* argv[]) {
     Command* c;
     vector<Command*>* all_commands = new vector<Command*>;
     map<string, Command*>* variables_commands = new map<string, Command*>;
+    SymbolTable* symTable = new SymbolTable();
 
     // Iteration and creation of all commands in the program.
     while (interpeted->size() > 0) {
-        c = creator->find(interpeted->at(index))->second->copy(interpeted);
-        if (interpeted->at(index).compare("openDataServer")) {
-            c->execute();
-            t[0] = thread(&OpenDataServer::ReadingMode, ((OpenDataServer*)c),
-                          ((OpenDataServer*)c)->getServerConnection()
-                          ->GetClientSocket(), &there_are_more_commands);
-            all_commands->push_back(c);
+        if (creator->find(interpeted->at(index)) != creator->end()) {
+            c = creator->find(interpeted->at(index))->second->copy(interpeted,
+                                                                   symTable);
         }
-        else if (interpeted->at(index).compare("connectControlClient")) {
+        if (interpeted->at(index) == "openDataServer") {
             c->execute();
-            t[1] = thread(&ConnectCommand::UpdatingMode, ((ConnectCommand*)c),
-                          ((ConnectCommand*)c)->getClientConnection()
-                          ->GetDestAddress(), &there_are_more_commands);
+            t[0] = thread(&OpenDataServer::ReadingMode, ((OpenDataServer *) c),
+                          ((OpenDataServer *) c)->getServerConnection()
+                                  ->GetClientSocket(),
+                          &there_are_more_commands);
             all_commands->push_back(c);
-        }
-        else if (c != nullptr) {
-            if (interpeted->at(index).compare("var")) {
+        } else if (interpeted->at(index) == "connectControlClient") {
+            c->execute();
+            t[1] = thread(&ConnectCommand::UpdatingMode, ((ConnectCommand *) c),
+                          ((ConnectCommand *) c)->getClientConnection()
+                                  ->GetDestAddress(), &there_are_more_commands);
+            all_commands->push_back(c);
+        } else if (c != nullptr) {
+            if (interpeted->at(index) == "var") {
                 variables_commands->insert({interpeted->at(index + 1), c});
             }
             all_commands->push_back(c);
@@ -54,6 +57,7 @@ int main(int argc, char* argv[]) {
             c->execute();
         }
     }
+    cout << "end of while" << endl;
     there_are_more_commands = false;
     t[0].join();
     t[1].join();

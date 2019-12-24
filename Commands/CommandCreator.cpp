@@ -8,37 +8,38 @@
 CommandCreator::CommandCreator() {
     this->creator = new map<string, Command*>;
     vector<string>* defaultInterperted = new vector<string>;
+    SymbolTable* symTable = new SymbolTable();
 
     // openDataServer
     this->creator->insert({"openDataServer",
-                           new OpenDataServer(defaultInterperted)});
+                           new OpenDataServer(defaultInterperted, symTable)});
 
     // connectControlClient
     this->creator->insert({"connectControlClient",
-                           new ConnectCommand(defaultInterperted)});
+                           new ConnectCommand(defaultInterperted, symTable)});
 
     // DefineVarCommand
     this->creator->insert({"var",
-                           new DefineVarCommand(defaultInterperted)});
+                           new DefineVarCommand(defaultInterperted, symTable)});
 
     // Print
     this->creator->insert({"Print",
-                           new PrintCommand(defaultInterperted)});
+                           new PrintCommand(defaultInterperted, symTable)});
 
     // Sleep
     this->creator->insert({"connectControlClient",
-                           new Sleep(defaultInterperted)});
+                           new Sleep(defaultInterperted, symTable)});
 
     // while
     this->creator->insert({"while",
-                           new WhileCommand(defaultInterperted)});
+                           new WhileCommand(defaultInterperted, symTable)});
 
     // IfComamnd
     this->creator->insert({"if",
-                           new IfCommand(defaultInterperted)});
+                           new IfCommand(defaultInterperted, symTable)});
 
     // ElseCommand
     this->creator->insert({"else",
-                           new IfCommand(defaultInterperted)});
+                           new IfCommand(defaultInterperted, symTable)});
 }
 

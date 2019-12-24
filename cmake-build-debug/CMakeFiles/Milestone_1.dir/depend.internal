@@ -8,6 +8,7 @@ CMakeFiles/Milestone_1.dir/Commands/Command.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp
@@ -25,6 +26,7 @@ CMakeFiles/Milestone_1.dir/Commands/CommandCreator.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp
@@ -35,6 +37,7 @@ CMakeFiles/Milestone_1.dir/Commands/ConnectCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.cpp
@@ -43,6 +46,7 @@ CMakeFiles/Milestone_1.dir/Commands/DefineVarCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp
@@ -51,6 +55,7 @@ CMakeFiles/Milestone_1.dir/Commands/IfCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp
@@ -60,6 +65,7 @@ CMakeFiles/Milestone_1.dir/Commands/OpenDataServer.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp
@@ -68,6 +74,7 @@ CMakeFiles/Milestone_1.dir/Commands/PrintCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp
@@ -76,6 +83,7 @@ CMakeFiles/Milestone_1.dir/Commands/Sleep.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.cpp
@@ -84,6 +92,7 @@ CMakeFiles/Milestone_1.dir/Commands/WhileCommand.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/Connection/client.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.cpp
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
@@ -105,6 +114,13 @@ CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o
 CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h
+CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.cpp
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 CMakeFiles/Milestone_1.dir/main.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h
@@ -122,4 +138,5 @@ CMakeFiles/Milestone_1.dir/main.cpp.o
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h
+ /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
  /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/main.cpp

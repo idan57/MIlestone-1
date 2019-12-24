@@ -12,9 +12,10 @@ class DefineVarCommand : public Command{
     int clientVar = 0;
     int serverVar = 0;
 public:
-    DefineVarCommand(vector<string>* inter):Command(inter){}
-    DefineVarCommand* copy(vector<string>* inter) {
-        return new DefineVarCommand(inter);
+    DefineVarCommand(vector<string>* inter, SymbolTable* symT):Command(inter,
+     symT) {}
+    DefineVarCommand* copy(vector<string>* inter,SymbolTable* symT) {
+        return new DefineVarCommand(inter, symT);
     }
     int execute();
 };

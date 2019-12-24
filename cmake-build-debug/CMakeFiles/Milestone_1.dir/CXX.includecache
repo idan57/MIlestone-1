@@ -21,18 +21,22 @@ bits/stdc++.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 ../Extra Methods/Extra.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+../SymbolTable/SymbolTable.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.cpp
-DefineVarCommand.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
-../Expressions/ex1.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
-thread
--
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp
+PrintCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
 string
 -
-
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
+iostream
+-
+bits/stdc++.h
+-
+../Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 
@@ -47,6 +51,10 @@ map
 -
 Expression.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp
 ex1.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 
@@ -67,4 +75,14 @@ iostream
 -
 map
 -
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
+iostream
+-
+string
+-
+../Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+../Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 

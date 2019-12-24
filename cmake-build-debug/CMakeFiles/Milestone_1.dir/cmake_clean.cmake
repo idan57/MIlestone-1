@@ -14,6 +14,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Milestone_1.dir/Expressions/ex1.cpp.o"
   "CMakeFiles/Milestone_1.dir/Extra_Methods/Extra.cpp.o"
   "CMakeFiles/Milestone_1.dir/Interpreter/interpreter.cpp.o"
+  "CMakeFiles/Milestone_1.dir/SymbolTable/SymbolTable.cpp.o"
   "CMakeFiles/Milestone_1.dir/main.cpp.o"
   "Milestone_1"
   "Milestone_1.pdb"

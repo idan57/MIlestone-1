@@ -12,9 +12,9 @@
 
 class IfCommand: public Command{
 public:
-    IfCommand(vector<string>* inter):Command(inter){}
-    IfCommand* copy(vector<string>* inter) {
-        return new IfCommand(inter);
+    IfCommand(vector<string>* inter, SymbolTable* symT):Command(inter, symT){}
+    IfCommand* copy(vector<string>* inter, SymbolTable* symT) {
+        return new IfCommand(inter, symT);
     }
     int execute();
 };

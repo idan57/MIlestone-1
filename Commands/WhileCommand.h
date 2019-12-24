@@ -13,9 +13,10 @@ class WhileCommand: public Command {
 private:
     map<int,Var*>* variablesToIter;
 public:
-    WhileCommand(vector<string>* inter):Command(inter){}
-    WhileCommand* copy(vector<string>* inter) {
-        return new WhileCommand(inter);
+    WhileCommand(vector<string>* inter, SymbolTable* symT):Command(inter,
+            symT){}
+    WhileCommand* copy(vector<string>* inter, SymbolTable* symT) {
+        return new WhileCommand(inter, symT);
     }
     int execute();
     void addVariablesToIter(Var* var);

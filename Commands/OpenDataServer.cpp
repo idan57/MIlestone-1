@@ -36,6 +36,7 @@ there_are_more_commands) {
     char dataFromSim[1024] = {0};
     while(*there_are_more_commands) {
         int bytesRead = read(client_connected , dataFromSim, 1024);
+        cout << dataFromSim << endl;
         ChangeMap(dataFromSim);
     }
 }
