@@ -49,8 +49,10 @@ int IfCommand::execute() {
 
     Expression *exVar = nullptr;
     Expression *exVal = nullptr;
-    exVar = this->setVar()->interpret(var);
-    exVal = this->setVar()->interpret(val);
+    var.erase(std::remove_if(var.begin(), var.end(), ::isspace), var.end());
+    exVar = this->setVar(var);
+    val.erase(std::remove_if(val.begin(), val.end(), ::isspace), val.end());
+    exVal = this->setVar(val);
 
     if (!Condition(exVar->calculate(),exVal->calculate(),op)) {
         vector<string > *deleteParsed  = this->parse(numToExecute - 1);

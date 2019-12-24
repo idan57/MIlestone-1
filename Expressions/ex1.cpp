@@ -107,6 +107,7 @@ Expression* Interpreter::interpret(string s) {
     int countOpen = 0;
     int countClose = 0;
     for (unsigned int k = 0; k < s.length(); k++) {
+
         if (!(s[k] == ')' || s[k] == '(' ||  isdigit(s[k]) || s[k] == '.' || s[k] == '_'
               || (s[k] >= 'a' && s[k] <= 'z') || (s[k] >= 'A' && s[k] <= 'Z') || s[k] == '+'
               || s[k] == '-' || s[k] == '*' || s[k] == '/')) {

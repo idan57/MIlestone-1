@@ -8,6 +8,8 @@
 
 #include "Command.h"
 #include "../Expressions/Var.h"
+#include "algorithm"
+
 
 class WhileCommand: public Command {
 private:

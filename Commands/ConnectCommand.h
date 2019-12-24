@@ -34,8 +34,7 @@ public:
     }
     int execute();
     void OpenClientConnection();
-    void UpdatingMode(sockaddr_in server_address,
-            bool* there_are_more_commands);
+    void UpdatingMode(bool* there_are_more_commands);
     client* getClientConnection() { return clientConnection; }
     ~ConnectCommand();
 };

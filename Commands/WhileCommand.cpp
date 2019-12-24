@@ -4,14 +4,14 @@
 
 #include "WhileCommand.h"
 
+
 int WhileCommand::execute() {
 
     int numOfTokens = 0;
     int i = 1;
     string var;
     string val;
-
-    vector<string>* whileInterperted;
+    vector<string>* whileInterperted = new vector<string>;
     vector<string>::iterator it;
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
@@ -36,6 +36,7 @@ int WhileCommand::execute() {
         var += ifParsed->at(i);
         i++;
     }
+
     string op = ifParsed->at(i);
 
     while (ifParsed->at(i+1) != "{") {
@@ -55,12 +56,15 @@ int WhileCommand::execute() {
 
     Expression *exVar = nullptr;
     Expression *exVal = nullptr;
-    exVar = this->setVar()->interpret(var);
-    exVal = this->setVar()->interpret(val);
+    var.erase(std::remove_if(var.begin(), var.end(), ::isspace), var.end());
+    exVar = this->setVar(var);
+    val.erase(std::remove_if(val.begin(), val.end(), ::isspace), val.end());
+    exVal = this->setVar(val);
 
     if (Condition(exVar->calculate(),exVal->calculate(),op)) {
         this->interperted->insert(this->interperted->begin()+numToExecute,whileInterperted->begin(), whileInterperted->end());
     }
+
     else {
         vector<string> *deleteParsed  = this->parse(numToExecute);
     }

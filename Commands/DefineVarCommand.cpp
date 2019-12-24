@@ -41,11 +41,11 @@ int DefineVarCommand::execute() {
             string path = string((sim->at(0)));
             symbolTable->variables->insert({path, v});
             if (parsed->at(1) == "->") {
-                symbolTable->ClientUpdate->insert({clientVar, path});
-                clientVar++;
+                symbolTable->ClientUpdate->insert({symbolTable->clientVar, path});
+                symbolTable->clientVar++;
             } else {
-                symbolTable->ServerUpdate->insert({serverVar, path});
-                serverVar++;
+                symbolTable->ServerUpdate->insert({symbolTable->serverVar, path});
+                symbolTable->serverVar++;
             }
         }
 

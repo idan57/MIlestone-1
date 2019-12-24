@@ -13,21 +13,23 @@
 }
 
 vector<double> * Command::splitNums(char* data, char delimeter) {
-    int i = 0;
-    stringstream number;
-    vector<double>* splitted = new vector<double>;
-    while(data[i] != '\0') {
+    int numOfVals = 0, i = 0;
 
+    vector<double>* splitted = new vector<double>;
+    while(numOfVals < NUM_OF_VALS_FROM_SERVER) {
+
+        stringstream number;
         // Parsing data until we reach ','
-        while(data[i] != delimeter) {
+        while(data[i] != delimeter && data[i] != '\n') {
 
             // Appending data to stream
             number << data[i];
             i++;
         }
-
+        string s = number.str();
         // Get the double value of the string in the stream
-        splitted->push_back(stod(number.str()));
+        splitted->push_back(stod(s));
+        numOfVals++;
         i++;
     }
     return splitted;
@@ -39,10 +41,10 @@ void Command::UpdateVariables(vector<double>* updatedVars, char SerOrCli) {
     if (SerOrCli == 's') {
         int serverLen = symbolTable->ServerUpdate->size();
         for (int i = 0; i < serverLen; i++) {
-            string dirToUpdate = (*symbolTable->ServerUpdate)[i];
-            int locationOfNewVal = (*symbolTable->directories)[dirToUpdate];
-            (*symbolTable->variables)[dirToUpdate]->SetValue
-                    ((*updatedVars)[locationOfNewVal]);
+           string dirToUpdate = (*symbolTable->ServerUpdate)[i];
+            int locationOfNewVal = symbolTable->directories->find(dirToUpdate)->second;
+            //symbolTable->variables->find(dirToUpdate)->second->SetValue
+                    ((*updatedVars).at(1));
         }
     }
     locker.unlock();
@@ -71,17 +73,17 @@ bool Command::Condition(double var, double val, string op) {
 
 }
 
-Interpreter* Command::setVar() {
+Expression* Command::setVar(string s) {
 
     Interpreter *i = new Interpreter();
-    string tempVar = nullptr;
-    string setVar = "";
+    string ss = string(s);
+    stringstream setVar;
     auto itr = symbolTable->variables->begin();
     while (itr != symbolTable->variables->end()) {
-        tempVar = itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
-        setVar += tempVar;
+        setVar << itr->second->GetPath() << "=" << to_string((itr->second->GetValue())) << ";";
         itr++;
     }
-    i->setVariables(setVar);
-    return i;
+    i->setVariables(setVar.str());
+    return i->interpret(ss);
+
 }

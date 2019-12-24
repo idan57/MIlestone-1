@@ -17,6 +17,7 @@
 using namespace std;
 static bool initializedVars = false;
 
+#define NUM_OF_VALS_FROM_SERVER 36
 // Mutex to lock the code in UpdateVariables method
 
 class Command {
@@ -38,7 +39,7 @@ public:
     vector<double>* splitNums(char* data, char delimeter);
     void UpdateVariables(vector<double>* updatedVars, char SerOrCli);
     bool Condition (double var, double val, string op);
-    Interpreter* setVar();
+    Expression* setVar(string s);
 };
 
 

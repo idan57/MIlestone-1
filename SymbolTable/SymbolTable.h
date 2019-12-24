@@ -14,6 +14,8 @@ using namespace std;
 
 class SymbolTable {
 public:
+    int clientVar;
+    int serverVar;
     map<string,Var*>* variables;
 
     // Map of directories - static so any instance will be able to get the
@@ -29,10 +31,13 @@ public:
     map<int, string>* ClientUpdate;
 
     SymbolTable() {
+        Extra *ex = new Extra();
         this->variables = new map<string,Var*>;
-        this->directories = Extra::initializeDirectories();
+        this->directories = ex->initializeDirectories();
         this->ServerUpdate = new map<int, string>;
         this->ClientUpdate = new map<int, string>;
+        clientVar = 0;
+        serverVar = 0;
     }
 };
 

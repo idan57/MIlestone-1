@@ -27,7 +27,7 @@ CommandCreator::CommandCreator() {
                            new PrintCommand(defaultInterperted, symTable)});
 
     // Sleep
-    this->creator->insert({"connectControlClient",
+    this->creator->insert({"Sleep",
                            new Sleep(defaultInterperted, symTable)});
 
     // while

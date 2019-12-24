@@ -6,61 +6,57 @@ using namespace std;
 #define NUM_OF_THREADS 2
 
 int main(int argc, char* argv[]) {
-    interpreter* interpreter_flight = new interpreter(argv[1]);
-    vector<string>* interpeted;
+    interpreter *interpreter_flight = new interpreter(argv[1]);
+    vector<string> *interpeted;
     bool there_are_more_commands = true;
     interpreter_flight->lexer();
     interpeted = interpreter_flight->getTokens();
-    // Iteration index
-    int index = 0;
 
     // Number of elements to iterate over
-    CommandCreator* cr = new CommandCreator();
-    map<string, Command*>* creator = cr->getCreator();
-    thread t[NUM_OF_THREADS];
+    CommandCreator *cr = new CommandCreator();
+    map<string, Command *> *creator = cr->getCreator();
+    thread t1;
+    thread t2;
 
     // Temporary Command variable
-    Command* c;
-    vector<Command*>* all_commands = new vector<Command*>;
-    map<string, Command*>* variables_commands = new map<string, Command*>;
-    SymbolTable* symTable = new SymbolTable();
-
+    Command *c;
+    vector<Command *> *all_commands = new vector<Command *>;
+    map<string, Command *> *variables_commands = new map<string, Command *>;
+    SymbolTable *symTable = new SymbolTable();
     // Iteration and creation of all commands in the program.
     while (interpeted->size() > 0) {
-        if (creator->find(interpeted->at(index)) != creator->end()) {
-            c = creator->find(interpeted->at(index))->second->copy(interpeted,
-                                                                   symTable);
+
+
+        if (creator->find(interpeted->at(0)) != creator->end()) {
+            c = creator->find(interpeted->at(0))->second->copy(interpeted,
+                                                               symTable);
+            all_commands->push_back(c);
         }
-        if (interpeted->at(index) == "openDataServer") {
+        if (interpeted->at(0) == "openDataServer") {
             c->execute();
-            t[0] = thread(&OpenDataServer::ReadingMode, ((OpenDataServer *) c),
+            t1 = thread(&OpenDataServer::ReadingMode, ((OpenDataServer *) c),
                           ((OpenDataServer *) c)->getServerConnection()
                                   ->GetClientSocket(),
                           &there_are_more_commands);
-            all_commands->push_back(c);
-        } else if (interpeted->at(index) == "connectControlClient") {
+        } else if (interpeted->at(0) == "connectControlClient") {
             c->execute();
-            t[1] = thread(&ConnectCommand::UpdatingMode, ((ConnectCommand *) c),
-                          ((ConnectCommand *) c)->getClientConnection()
-                                  ->GetDestAddress(), &there_are_more_commands);
-            all_commands->push_back(c);
-        } else if (c != nullptr) {
-            if (interpeted->at(index) == "var") {
-                variables_commands->insert({interpeted->at(index + 1), c});
-            }
-            all_commands->push_back(c);
+            t2 = thread(&ConnectCommand::UpdatingMode, ((ConnectCommand *) c),  &there_are_more_commands);
+        } else if (interpeted->at(0) == "var") {
+            variables_commands->insert({interpeted->at(1), c});
             c->execute();
         }
-        // It is an existing variable
-        else {
-            c = variables_commands->find(interpeted->at(index))->second;
+            // It is an existing variable
+        else if (variables_commands->find(interpeted->at(0)) != variables_commands->end()) {
+            c = variables_commands->find(interpeted->at(0))->second;
+            c->execute();
+        } else {
             c->execute();
         }
     }
-    cout << "end of while" << endl;
+
     there_are_more_commands = false;
-    t[0].join();
-    t[1].join();
+    //t1.join();
+    t2.join();
     return 0;
 }
 

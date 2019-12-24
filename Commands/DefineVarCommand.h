@@ -9,8 +9,6 @@
 #include "Command.h"
 
 class DefineVarCommand : public Command{
-    int clientVar = 0;
-    int serverVar = 0;
 public:
     DefineVarCommand(vector<string>* inter, SymbolTable* symT):Command(inter,
      symT) {}
