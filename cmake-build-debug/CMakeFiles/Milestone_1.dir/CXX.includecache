@@ -6,11 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.cpp
-Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 string
 -
 iostream
@@ -18,65 +14,47 @@ iostream
 bits/stdc++.h
 -
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 ../Expressions/Expression.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 ../Expressions/ex1.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 ../Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 ../SymbolTable/SymbolTable.h
-/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.cpp
-CommandCreator.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h
 iostream
 -
 string
 -
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 OpenDataServer.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
 PrintCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
 WhileCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h
 ConnectCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
 DefineVarCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
 Sleep.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h
 IfCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.cpp
-ConnectCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.h
-../Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
-unistd.h
--
-netinet/in.h
--
-arpa/inet.h
--
-sys/socket.h
--
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 ../Connection/server.h
-/home/liad/CLionProjects/MILESTONE_1/Connection/server.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
 ../Connection/client.h
-/home/liad/CLionProjects/MILESTONE_1/Connection/client.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
 sys/socket.h
 -
 string
@@ -94,47 +72,27 @@ thread
 pthread.h
 -
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.cpp
-DefineVarCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.h
-../Expressions/ex1.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h
-thread
--
-string
--
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.cpp
-IfCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 ../Expressions/Expression.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 ../Expressions/ex1.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.cpp
-OpenDataServer.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.h
-../Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
 iostream
 -
 map
 -
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 ../Connection/server.h
-/home/liad/CLionProjects/MILESTONE_1/Connection/server.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
 thread
 -
 pthread.h
@@ -142,15 +100,11 @@ pthread.h
 chrono
 -
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 ../Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.cpp
-PrintCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
 string
 -
 iostream
@@ -158,29 +112,29 @@ iostream
 bits/stdc++.h
 -
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.cpp
-Sleep.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 
-/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.cpp
-WhileCommand.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.h
-
-/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h
 Command.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
+algorithm
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/algorithm
 
-/home/liad/CLionProjects/MILESTONE_1/Connection/client.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.cpp
+cstring
+-
+client.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
 sys/socket.h
 -
 string
@@ -194,7 +148,7 @@ netinet/in.h
 arpa/inet.h
 -
 
-/home/liad/CLionProjects/MILESTONE_1/Connection/server.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h
 iostream
 -
 sys/socket.h
@@ -208,9 +162,9 @@ netinet/in.h
 arpa/inet.h
 -
 
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 iostream
 -
 mutex
@@ -218,53 +172,49 @@ mutex
 map
 -
 Expression.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 ex1.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 
-/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
 iostream
 -
 string
 -
 Expression.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Expression.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 bits/stdc++.h
 -
 string
 -
 
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 iostream
 -
 map
 -
 
-/home/liad/CLionProjects/MILESTONE_1/Interpreter/interpreter.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h
 bits/stdc++.h
 -
 
-/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.cpp
-SymbolTable.h
-/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.h
-
-/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 iostream
 -
 string
 -
 ../Expressions/Var.h
-/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 ../Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 
-/home/liad/CLionProjects/MILESTONE_1/main.cpp
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/main.cpp
 iostream
 -
 Interpreter/interpreter.h
-/home/liad/CLionProjects/MILESTONE_1/Interpreter/interpreter.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h
 Commands/CommandCreator.h
-/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h
 Extra Methods/Extra.h
-/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 

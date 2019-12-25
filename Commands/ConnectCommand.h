@@ -24,11 +24,16 @@
 class ConnectCommand: public Command{
 private:
 
+    int PORT;
+    string IP;
+public:
     // The socket created for our program for connection
     client* clientConnection;
-public:
     ConnectCommand(vector<string>* inter, SymbolTable* symT):Command(inter,
-            symT){}
+            symT){
+        this->PORT = 0;
+        this->IP = string();
+    }
     ConnectCommand* copy(vector<string>* inter,SymbolTable* symT) {
         return new ConnectCommand(inter, symT);
     }

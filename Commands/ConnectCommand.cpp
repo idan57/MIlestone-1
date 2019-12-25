@@ -10,9 +10,8 @@
 #include <sys/socket.h>
 
 int ConnectCommand::execute() {
-
-    // Open client socket
     this->OpenClientConnection();
+    // Open client socket
     return 2;
 }
 void ConnectCommand::OpenClientConnection() {
@@ -21,24 +20,28 @@ void ConnectCommand::OpenClientConnection() {
 
     // Get ("Address", port) parsed data
     clientInfo = this->parse(2);
-    string IP = clientInfo->at(1);
     int PORT = stoi(clientInfo->at(2));
-
+    string IP = clientInfo->at(1);
+    stringstream final_ip;
+    int i = 0;
+    while (IP[i] != '\0') {
+        if (IP[i] != '"') {
+            final_ip << IP[i];
+        }
+        i++;
+    }
     // Create Client
     this->clientConnection = new client();
-    cout << PORT << endl;
-    int success = this->clientConnection->CreateClient(IP.c_str(), PORT);
+    int success = this->clientConnection->CreateClient(final_ip.str().c_str(), PORT);
     if (success != 1) {
         throw "Failed To Open Client\n";
     }
-    cout << "sss" << endl;
-    this->clientConnection->ConnectToServer();
-    cout << "sss" << endl;
 }
 
 void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
-    // Connect to simulator
     // Check if connection is still up
+    std::this_thread::sleep_for(std::chrono::milliseconds(30000));
+    this->clientConnection->ConnectToServer();
     int valread = this->clientConnection->readFromServer();
     // An infinite loop that gets data from server until there is no connection
     while (*there_are_more_commands) {
@@ -55,7 +58,6 @@ void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
 
             // Cut the last ',' from the end
             dataToUpdate = dataToUpdate.substr(0, (dataToUpdate.size() - 1));
-            cout << "gg" << endl;
             this->clientConnection->SendData(dataToUpdate.c_str());
         }
 

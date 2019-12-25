@@ -8,28 +8,28 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug"/>
+				<Option working_dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug"/>
+				<Option working_dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Milestone_1">
-				<Option output="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Milestone_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug"/>
+				<Option output="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/Milestone_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -44,15 +44,15 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Milestone_1"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Milestone_1"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Milestone_1/fast">
-				<Option output="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Milestone_1" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug"/>
+				<Option output="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug/Milestone_1" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -67,123 +67,123 @@
 					<Add directory="/usr/include"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Milestone_1/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 Milestone_1/fast"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug"/>
+				<Option working_dir="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/home/liad/CLionProjects/MILESTONE_1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j3 -f &quot;/home/idan/Desktop/Advanced\ Programming/Milestone\ 1/Milestone-1/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/Command.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/Command.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/CommandCreator.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/ConnectCommand.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/DefineVarCommand.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/IfCommand.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/OpenDataServer.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/PrintCommand.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/Sleep.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Commands/WhileCommand.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Connection/client.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Connection/client.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Connection/server.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Connection/server.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/server.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Expressions/Var.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Expressions/ex1.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Extra Methods/Extra.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Interpreter/interpreter.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/Interpreter/interpreter.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/SymbolTable/SymbolTable.h">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/main.cpp">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/main.cpp">
 			<Option target="Milestone_1"/>
 		</Unit>
-		<Unit filename="/home/liad/CLionProjects/MILESTONE_1/CMakeLists.txt">
+		<Unit filename="/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

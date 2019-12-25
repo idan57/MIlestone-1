@@ -55,7 +55,7 @@ int main(int argc, char* argv[]) {
     }
 
     there_are_more_commands = false;
-    //t1.join();
+    t1.join();
     t2.join();
     return 0;
 }

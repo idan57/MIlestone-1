@@ -20,7 +20,7 @@ public:
     int ConnectToServer();
     int SendData(const char* data);
     int GetClientSocket() { return  this->client_socket;}
-    sockaddr_in GetDestAddress() { return  this->destAddress;}
+    sockaddr_in* GetDestAddress() { return  &this->destAddress;}
     void close() {::close(this->client_socket);}
     int readFromServer();
 };
