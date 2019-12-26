@@ -45,3 +45,8 @@ void server::CreateDestAddress() {
     this->serverAddress.sin_addr.s_addr = inet_addr(this->address);
     this->serverAddress.sin_port = htons(this->port);
 }
+
+
+void server::close() {
+    ::close(this->server_socket);
+}

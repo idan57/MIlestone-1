@@ -59,6 +59,9 @@ void interpreter::lexer() {
 
         if (line.substr(0, 5) == "Print" || line.substr(0, 5) == "print") {
             token = line.substr(6, line.length()-7);
+            token.erase(
+                    remove( token.begin(), token.end(), '\"' ),
+                    token.end());
             tokens->push_back(line.substr(0, 5));
             tokens->push_back(token);
             line.erase(0, line.length());

@@ -39,6 +39,7 @@ there_are_more_commands) {
         //cout << dataFromSim << endl;
         ChangeMap(dataFromSim);
     }
+    this->serverConnection->close();
 }
 void OpenDataServer::ChangeMap(char* dataFromSim) {
 

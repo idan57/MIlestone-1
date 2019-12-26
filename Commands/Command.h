@@ -5,8 +5,9 @@
 #ifndef MILESTONE_1_COMMAND_H
 #define MILESTONE_1_COMMAND_H
 
-#include <string>
+
 #include <iostream>
+#include <string>
 #include <bits/stdc++.h>
 #include "../Expressions/Var.h"
 #include "../Expressions/Expression.h"

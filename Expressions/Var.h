@@ -25,9 +25,13 @@ private:
 public:
     Var(string p, double val):path(p),value(val){}
     void SetPath(string p) {this->path = p;}
-    string GetPath() { return this->path;}
-    void SetValue(double val) {        
-        this->value = val;       
+    string GetPath() {
+        return this->path;
+    }
+    void SetValue(double val) {
+        locker.lock();
+        this->value = val;
+        locker.unlock();
     }
     int GetValue() {
         bool succeededLocking = false;

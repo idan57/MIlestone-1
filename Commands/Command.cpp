@@ -1,5 +1,6 @@
 // Parses the text we lexered beforehand until the index n.
 #include "Command.h"
+using namespace std;
 
     vector<string>* Command::parse(int n) {
     // The parsed data in a vector.
@@ -28,26 +29,29 @@ vector<double> * Command::splitNums(char* data, char delimeter) {
         }
         string s = number.str();
         // Get the double value of the string in the stream
-        splitted->push_back(stod(s));
-        numOfVals++;
+        if (s != "") {
+            splitted->push_back(stod(s));
+            numOfVals++;
+        }
         i++;
     }
     return splitted;
 }
 
 void Command::UpdateVariables(vector<double>* updatedVars, char SerOrCli) {
-    locker.lock();
+    stringstream data;
+    std::this_thread::sleep_for(std::chrono::milliseconds(1100));
     // Update Server
     if (SerOrCli == 's') {
         int serverLen = symbolTable->ServerUpdate->size();
         for (int i = 0; i < serverLen; i++) {
+
            string dirToUpdate = (*symbolTable->ServerUpdate)[i];
             int locationOfNewVal = symbolTable->directories->find(dirToUpdate)->second;
-            //symbolTable->variables->find(dirToUpdate)->second->SetValue
-                    ((*updatedVars).at(1));
+            symbolTable->variables->find(dirToUpdate)->second->SetValue
+                    ((*updatedVars).at(locationOfNewVal));
         }
     }
-    locker.unlock();
 }
 
 
@@ -78,12 +82,18 @@ Expression* Command::setVar(string s) {
     Interpreter *i = new Interpreter();
     string ss = string(s);
     stringstream setVar;
-    auto itr = symbolTable->variables->begin();
-    while (itr != symbolTable->variables->end()) {
-        setVar << itr->second->GetPath() << "=" << to_string((itr->second->GetValue())) << ";";
-        itr++;
+    if (symbolTable->variables->size() > 0) {
+        stringstream st;
+        auto itr = symbolTable->variables->begin();
+        while (itr != symbolTable->variables->end()) {
+            double d = itr->second->GetValue();
+            stringstream num;
+            num << d;
+            st << itr->second->GetPath() << "=" << (num.str()) << ";";
+            itr++;
+        }
+        i->setVariables(st.str());
     }
-    i->setVariables(setVar.str());
     return i->interpret(ss);
 
 }

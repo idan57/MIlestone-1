@@ -40,29 +40,26 @@ void ConnectCommand::OpenClientConnection() {
 
 void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
     // Check if connection is still up
-    std::this_thread::sleep_for(std::chrono::milliseconds(30000));
     this->clientConnection->ConnectToServer();
-    int valread = this->clientConnection->readFromServer();
     // An infinite loop that gets data from server until there is no connection
     while (*there_are_more_commands) {
         for (auto dir = symbolTable->ClientUpdate->begin();
              dir != symbolTable->ClientUpdate->end(); dir++) {
             stringstream newVals;
+            double d = symbolTable->variables->at(dir->second)->GetValue();
 
             // We generate a string in the generic server_small.xml format
-            newVals << "set " << dir->second << " " <<
-            symbolTable->variables->at(dir->second)->GetValue() << "\n";
+            newVals << "set " << dir->second << " " << d << "\r\n";
 
             // Get the generated string
-            string dataToUpdate = newVals.str().c_str();
+            string dataToUpdate = newVals.str();
 
             // Cut the last ',' from the end
-            dataToUpdate = dataToUpdate.substr(0, (dataToUpdate.size() - 1));
-            this->clientConnection->SendData(dataToUpdate.c_str());
+            dataToUpdate = dataToUpdate.substr(0, dataToUpdate.size());
+            this->clientConnection->SendData(&dataToUpdate);
+            int valread = this->clientConnection->readFromServer();
+
         }
-
-        // Send data
-        valread = this->clientConnection->readFromServer();
     }
+    this->clientConnection->close();
 }
-

@@ -9,6 +9,7 @@
 #include "Command.h"
 #include "../Expressions/Var.h"
 #include "algorithm"
+#include <bits/stdc++.h>
 
 
 class WhileCommand: public Command {

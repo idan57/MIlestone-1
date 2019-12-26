@@ -1,4 +1,5 @@
 #include <cstring>
+#include <sstream>
 #include "client.h"
 
 int client::CreateClient(const char * destAddr, int port) {
@@ -25,8 +26,8 @@ void client::CreateDestAddress(const char *addr, int port) {
     this->destAddress.sin_port = htons(port);
 }
 
-int client::SendData(const char* data) {
-    int is_sent = send(this->client_socket , data, strlen(data), 0);
+int client::SendData(string* data) {
+    int is_sent = write(this->client_socket , data->c_str(), data->size());
     if (is_sent == -1) {
         std::cout<<"Error sending message"<<std::endl;
         return -1;
@@ -37,5 +38,6 @@ int client::SendData(const char* data) {
 int client::readFromServer() {
     char buffer[1024] = {0};
     int valread = read( client_socket , buffer, 1024);
+    int i = 0;
     return valread;
 }

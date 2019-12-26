@@ -5,21 +5,23 @@
 #include "WhileCommand.h"
 
 
+
 int WhileCommand::execute() {
 
     int numOfTokens = 0;
     int i = 1;
+    vector<string>::iterator it;
     string var;
     string val;
     vector<string>* whileInterperted = new vector<string>;
-    vector<string>::iterator it;
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
 
+        whileInterperted->push_back(*it);
         if (*it == "}") {
             break;
         }
-        whileInterperted->push_back(*it);
+
     }
 
     for (it = this->interperted->begin(); it != this->interperted->end(); it++) {
@@ -60,12 +62,11 @@ int WhileCommand::execute() {
     exVar = this->setVar(var);
     val.erase(std::remove_if(val.begin(), val.end(), ::isspace), val.end());
     exVal = this->setVar(val);
-
     if (Condition(exVar->calculate(),exVal->calculate(),op)) {
         this->interperted->insert(this->interperted->begin()+numToExecute,whileInterperted->begin(), whileInterperted->end());
     }
 
     else {
-        vector<string> *deleteParsed  = this->parse(numToExecute);
+        vector<string> *deleteParsed  = this->parse(numToExecute -1);
     }
 }
