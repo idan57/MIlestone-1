@@ -6,10 +6,14 @@
 
 #IncludeRegexTransform: 
 
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.cpp
+Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
-string
--
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 iostream
+-
+string
 -
 bits/stdc++.h
 -
@@ -23,6 +27,10 @@ bits/stdc++.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 ../SymbolTable/SymbolTable.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.cpp
+CommandCreator.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/CommandCreator.h
 iostream
@@ -45,6 +53,20 @@ Sleep.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h
 IfCommand.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.cpp
+ConnectCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
+../Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
+unistd.h
+-
+netinet/in.h
+-
+arpa/inet.h
+-
+sys/socket.h
+-
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/ConnectCommand.h
 Command.h
@@ -72,9 +94,23 @@ thread
 pthread.h
 -
 
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.cpp
+DefineVarCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
+../Expressions/ex1.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+thread
+-
+string
+-
+
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/DefineVarCommand.h
 Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.cpp
+IfCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/IfCommand.h
 Command.h
@@ -83,6 +119,12 @@ Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
 ../Expressions/ex1.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/ex1.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.cpp
+OpenDataServer.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
+../Extra Methods/Extra.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/OpenDataServer.h
 iostream
@@ -104,6 +146,10 @@ chrono
 ../Extra Methods/Extra.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Extra Methods/Extra.h
 
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.cpp
+PrintCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
+
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/PrintCommand.h
 string
 -
@@ -116,9 +162,17 @@ bits/stdc++.h
 Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
 
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.cpp
+Sleep.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h
+
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Sleep.h
 Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/Command.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.cpp
+WhileCommand.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/WhileCommand.h
 Command.h
@@ -127,12 +181,8 @@ Command.h
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 algorithm
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Commands/algorithm
-
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.cpp
-cstring
+bits/stdc++.h
 -
-client.h
-/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Connection/client.h
 sys/socket.h
@@ -163,6 +213,10 @@ arpa/inet.h
 -
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Expression.h
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.cpp
+Var.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Expressions/Var.h
 iostream
@@ -197,6 +251,10 @@ map
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/Interpreter/interpreter.h
 bits/stdc++.h
 -
+
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.cpp
+SymbolTable.h
+/home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 
 /home/idan/Desktop/Advanced Programming/Milestone 1/Milestone-1/SymbolTable/SymbolTable.h
 iostream

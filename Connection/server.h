@@ -19,10 +19,9 @@ private:
     int server_socket;
     int client_socket;
     int port;
-    const char* address;
     sockaddr_in serverAddress;
 public:
-    server(int p, const char* addr):port(p), address(addr){}
+    server(int p):port(p){}
     void CreateDestAddress();
     int CreateServer();
     int GetServerSocket() { return  this->server_socket;}

@@ -26,7 +26,6 @@ int DefineVarCommand::execute() {
             while (iter != symbolTable->variables->end()) {
                 if ((iter->second->GetPath()) == val) {
                     num = iter->second->GetValue();
-
                     break;
                 }
                 iter++;

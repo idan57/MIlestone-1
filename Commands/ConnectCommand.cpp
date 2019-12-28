@@ -45,9 +45,11 @@ void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
     while (*there_are_more_commands) {
         for (auto dir = symbolTable->ClientUpdate->begin();
              dir != symbolTable->ClientUpdate->end(); dir++) {
-            stringstream newVals;
+            ostringstream newVals;
             double d = symbolTable->variables->at(dir->second)->GetValue();
 
+            newVals << std::setprecision(10);
+            newVals << std::fixed;
             // We generate a string in the generic server_small.xml format
             newVals << "set " << dir->second << " " << d << "\r\n";
 

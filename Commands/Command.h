@@ -28,11 +28,12 @@ protected:
     bool* there_are_commands;
     vector<string>* interperted; // the vector of data after interpretation
     SymbolTable* symbolTable;
-
+    vector<string>* data_sim;
 public:
     Command(vector<string>* inter, SymbolTable* symT) {
         this->interperted = inter;
         this->symbolTable = symT;
+        this->data_sim = new vector<string>;
     }
     virtual int execute() = 0; // method for all commands to override
     virtual Command* copy(vector<string>* inter, SymbolTable* symT) = 0;

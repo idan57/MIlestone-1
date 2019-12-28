@@ -23,7 +23,7 @@ int OpenDataServer::execute() {
 void OpenDataServer::OpenServerConnection(int port) {
 
     // Create server instance
-    this->serverConnection = new server(port, "127.0.0.1");
+    this->serverConnection = new server(port);
 
     // Create server connection
     int server_socket = this->serverConnection->CreateServer();

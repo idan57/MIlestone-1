@@ -30,15 +30,23 @@ public:
     }
     void SetValue(double val) {
         locker.lock();
-        this->value = val;
+        if ((this->value - val) < 10) {
+            this->value = val;
+        }
         locker.unlock();
     }
-    int GetValue() {
+    double GetValue() {
         bool succeededLocking = false;
+        double val = 0;
         while(!(succeededLocking)) {
             succeededLocking = locker.try_lock();
         }
-        double val = this->value;
+        if (this->value < 0.01 && this->value != 0) {
+            val = this->value * 10;
+        }
+        else {
+            val = this->value;
+        }
         locker.unlock();
         return val;
     }
@@ -49,7 +57,11 @@ public:
         string setVar = "";
         auto itr = variables->begin();
         while (itr != variables->end()) {
-            tempVar = itr->second->GetPath() + "=" + to_string((itr->second->GetValue())) + ";";
+            ostringstream num;
+            num << std::setprecision(30);
+            num << std::fixed;
+            num << itr->second->GetValue();
+            tempVar = itr->second->GetPath() + "=" + num.str() + ";";
             setVar += tempVar;
             itr++;
         }

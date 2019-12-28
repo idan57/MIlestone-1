@@ -6,7 +6,6 @@ using namespace std;
 #define NUM_OF_THREADS 2
 
 int main(int argc, char* argv[]) {
-
     interpreter *interpreter_flight = new interpreter(argv[1]);
     vector<string> *interpeted;
     bool there_are_more_commands = true;
@@ -29,10 +28,6 @@ int main(int argc, char* argv[]) {
 
     // Iteration and creation of all commands in the program.
     while (interpeted->size() > 0) {
-
-
-
-
         if (creator->find(interpeted->at(0)) != creator->end()) {
             c = creator->find(interpeted->at(0))->second->copy(interpeted,
                                                                symTable);

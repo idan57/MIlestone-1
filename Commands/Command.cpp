@@ -15,32 +15,60 @@ using namespace std;
 
 vector<double> * Command::splitNums(char* data, char delimeter) {
     int numOfVals = 0, i = 0;
-
     vector<double>* splitted = new vector<double>;
-    while(numOfVals < NUM_OF_VALS_FROM_SERVER) {
-
-        stringstream number;
-        // Parsing data until we reach ','
-        while(data[i] != delimeter && data[i] != '\n') {
-
-            // Appending data to stream
-            number << data[i];
-            i++;
-        }
-        string s = number.str();
-        // Get the double value of the string in the stream
-        if (s != "") {
-            splitted->push_back(stod(s));
+    while (data[i] != '\n' && data[i] != '\0') {
+        if (data[i] == ',') {
             numOfVals++;
         }
         i++;
+    }
+    if (numOfVals == 35) {
+        int i = 0, vals = 0;
+        while(vals < NUM_OF_VALS_FROM_SERVER) {
+
+            stringstream number;
+            // Parsing data until we reach ','
+            while(data[i] != delimeter && data[i] != '\n') {
+
+                // Appending data to stream
+                number << data[i];
+                i++;
+            }
+            string s = number.str();
+            // Get the double value of the string in the stream
+            if (s != "") {
+                splitted->push_back(stod(s));
+                vals++;
+            }
+            i++;
+        }
+    } else {
+        int vals = 0;
+        i++;
+        while(vals < NUM_OF_VALS_FROM_SERVER) {
+
+            stringstream number;
+            // Parsing data until we reach ','
+            while(data[i] != delimeter && data[i] != '\n') {
+
+                // Appending data to stream
+                number << data[i];
+                i++;
+            }
+            string s = number.str();
+            // Get the double value of the string in the stream
+            if (s != "") {
+                splitted->push_back(stod(s));
+                vals++;
+            }
+            i++;
+        }
     }
     return splitted;
 }
 
 void Command::UpdateVariables(vector<double>* updatedVars, char SerOrCli) {
     stringstream data;
-    std::this_thread::sleep_for(std::chrono::milliseconds(1100));
     // Update Server
     if (SerOrCli == 's') {
         int serverLen = symbolTable->ServerUpdate->size();
@@ -87,7 +115,9 @@ Expression* Command::setVar(string s) {
         auto itr = symbolTable->variables->begin();
         while (itr != symbolTable->variables->end()) {
             double d = itr->second->GetValue();
-            stringstream num;
+            ostringstream num;
+            num << std::setprecision(30);
+            num << std::fixed;
             num << d;
             st << itr->second->GetPath() << "=" << (num.str()) << ";";
             itr++;

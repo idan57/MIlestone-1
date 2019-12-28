@@ -42,7 +42,7 @@ void server::CreateConnection() {
 }
 void server::CreateDestAddress() {
     this->serverAddress.sin_family = AF_INET;
-    this->serverAddress.sin_addr.s_addr = inet_addr(this->address);
+    this->serverAddress.sin_addr.s_addr = INADDR_ANY;
     this->serverAddress.sin_port = htons(this->port);
 }
 
