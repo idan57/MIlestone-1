@@ -31,10 +31,10 @@ The following classes inherit from this class:
 
 ## ConnectCommand
 ### int execute()
-Opens a client, connects to the **FlightGear Simulator** and sending to it data.
+Opens a client, connects to the **FlightGear Simulator** and sending data to it.
 
 ### void OpenClientConnection()
-Creates the client
+Creates the client.
 
 ### void UpdatingMode(bool \*there_are_more_commands)
 Connecting to the **FlightGear Simulator** and sending data until "there_are_more_commands" is False.
@@ -71,3 +71,4 @@ Uses the **std::this_thread::sleep_for** method to stop all threads for a certai
 ## WhileCommand
 ### int execute()
 Works like the IfCommand, but it stops when the iteration's condition is not met.
+
