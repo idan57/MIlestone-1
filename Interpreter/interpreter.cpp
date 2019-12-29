@@ -18,6 +18,37 @@ void interpreter::lexer() {
 
     while (getline(input, line)) {
 
+
+        if (line.substr(0, 14) == "openDataServer") {
+            token = line.substr(15, line.length()-16);
+            token.erase(
+                    remove( token.begin(), token.end(), '\"' ),
+                    token.end());
+            tokens->push_back(line.substr(0, 14));
+            tokens->push_back(token);
+            line.erase(0, line.length());
+        }
+        if (line.substr(0, 20) == "connectControlClient") {
+            token = line.substr(21, line.find(",")-22);
+            token.erase(
+                    remove( token.begin(), token.end(), '\"' ),
+                    token.end());
+            tokens->push_back(line.substr(0, 20));
+            tokens->push_back(token);
+            token = line.substr(line.find(",")+1, line.length() - line.find(",") - 2);
+            tokens->push_back(token);
+            line.erase(0, line.length());
+        }
+        if (line.substr(0, 5) == "Sleep" || line.substr(0, 5) == "sleep") {
+            token = line.substr(6, line.length()-7);
+            token.erase(
+                    remove( token.begin(), token.end(), '\"' ),
+                    token.end());
+            tokens->push_back(line.substr(0, 5));
+            tokens->push_back(token);
+            line.erase(0, line.length());
+        }
+
         line = regex_replace(line, std::regex("^ +"), "");
         int j = 0;
         while(line[j] != '\0') {
