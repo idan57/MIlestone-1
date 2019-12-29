@@ -4,7 +4,8 @@
 
 #include "CommandCreator.h"
 
-
+// Function that creates a map of Command objects that later will create
+// instances of those Commands.
 CommandCreator::CommandCreator() {
     this->creator = new map<string, Command*>;
     vector<string>* defaultInterperted = new vector<string>;

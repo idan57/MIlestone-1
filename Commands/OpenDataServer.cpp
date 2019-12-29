@@ -10,7 +10,7 @@ int OpenDataServer::execute() {
     // Parse the vector of parsed data
     vector<string>* parsed = this->parse(1);
     // Get The port's value
-    int port = stoi(parsed->at(1));
+    int port = this->setVar(parsed->at(1))->calculate();
 
     // Open server as a thread
     thread serverOpen(&OpenDataServer::OpenServerConnection, this, port);
@@ -33,11 +33,12 @@ void OpenDataServer::OpenServerConnection(int port) {
 
 void OpenDataServer::ReadingMode(int client_connected ,bool*
 there_are_more_commands) {
-    char dataFromSim[1024] = {0};
     while(*there_are_more_commands) {
+        char dataFromSim[1024] = {0};
         int bytesRead = read(client_connected , dataFromSim, 1024);
         //cout << dataFromSim << endl;
         ChangeMap(dataFromSim);
+        std::this_thread::sleep_for(std::chrono::milliseconds(19));
     }
     this->serverConnection->close();
 }
@@ -45,7 +46,6 @@ void OpenDataServer::ChangeMap(char* dataFromSim) {
 
     // Split data by ','
     vector<double>* dataToUpdate = splitNums(dataFromSim, ',');
-
 
     // Update the variables accordingly
     this->UpdateVariables(dataToUpdate, 's');

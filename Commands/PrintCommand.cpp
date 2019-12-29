@@ -17,7 +17,6 @@ int PrintCommand::execute() {
             return 1;
         }
 
-
     }
     cout << parsed->at(1) << "\n";
 }

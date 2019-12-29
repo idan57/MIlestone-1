@@ -66,11 +66,6 @@ int DefineVarCommand::execute() {
                 Expression* value = this->setVar(val);
                 double d = value->calculate();
                 it->second->SetValue(d);
-                /*
-                auto varToUpdate = it->second;
-                thread update(&Var::InterpretVar,varToUpdate,nameOfVar,
-                        val, symbolTable->variables);
-                        */
                 break;
             }
             it++;

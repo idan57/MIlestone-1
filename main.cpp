@@ -7,12 +7,19 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     interpreter *interpreter_flight = new interpreter(argv[1]);
-    vector<string> *interpeted;
+    vector<string> *interpeted = new vector<string>;
     bool there_are_more_commands = true;
     interpreter_flight->lexer();
+
+//    // Adding variable for straight flight
+//    interpeted->push_back("var");
+//    interpeted->push_back("br");
+//    interpeted->push_back("->");
+//    interpeted->push_back("sim");
+//    interpeted->push_back("/controls/gear/brake-right");
+
+    // Getting all the tokens
     interpeted = interpreter_flight->getTokens();
-
-
 
     // Number of elements to iterate over
     CommandCreator *cr = new CommandCreator();
@@ -28,21 +35,23 @@ int main(int argc, char* argv[]) {
 
     // Iteration and creation of all commands in the program.
     while (interpeted->size() > 0) {
+
+        // We create a copy of the Command
         if (creator->find(interpeted->at(0)) != creator->end()) {
             c = creator->find(interpeted->at(0))->second->copy(interpeted,
                                                                symTable);
             all_commands->push_back(c);
         }
-        if (interpeted->at(0) == "openDataServer") {
+        if (interpeted->at(0) == "openDataServer") { // server
             c->execute();
             t1 = thread(&OpenDataServer::ReadingMode, ((OpenDataServer *) c),
                           ((OpenDataServer *) c)->getServerConnection()
                                   ->GetClientSocket(),
                           &there_are_more_commands);
-        } else if (interpeted->at(0) == "connectControlClient") {
+        } else if (interpeted->at(0) == "connectControlClient") { // client
             c->execute();
             t2 = thread(&ConnectCommand::UpdatingMode, ((ConnectCommand *) c),  &there_are_more_commands);
-        } else if (interpeted->at(0) == "var") {
+        } else if (interpeted->at(0) == "var") { // add variable
             variables_commands->insert({interpeted->at(1), c});
             c->execute();
         }
@@ -50,12 +59,15 @@ int main(int argc, char* argv[]) {
         else if (variables_commands->find(interpeted->at(0)) != variables_commands->end()) {
             c = variables_commands->find(interpeted->at(0))->second;
             c->execute();
-        } else {
+        } else { // execute any other command
             c->execute();
         }
     }
 
+    // There are no more commands to execute
     there_are_more_commands = false;
+
+    // Join the treads of the server and the client.
     t1.join();
     t2.join();
     return 0;

@@ -73,7 +73,6 @@ void Command::UpdateVariables(vector<double>* updatedVars, char SerOrCli) {
     if (SerOrCli == 's') {
         int serverLen = symbolTable->ServerUpdate->size();
         for (int i = 0; i < serverLen; i++) {
-
            string dirToUpdate = (*symbolTable->ServerUpdate)[i];
             int locationOfNewVal = symbolTable->directories->find(dirToUpdate)->second;
             symbolTable->variables->find(dirToUpdate)->second->SetValue
