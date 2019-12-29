@@ -21,19 +21,10 @@ int DefineVarCommand::execute() {
         if (parsed->at(1) == "=") {
             string var = parsed->at(0);
             string val = parsed->at(2);
-
-            auto iter = symbolTable->variables->begin();
-            while (iter != symbolTable->variables->end()) {
-                if ((iter->second->GetPath()) == val) {
-                    num = iter->second->GetValue();
-                    break;
-                }
-                iter++;
-            }
+            num = this->setVar(val)->calculate();
             string str = string(var);
             Var *v = new Var(var,num);
             symbolTable->variables->insert({str,v});
-
         } else {
 
             vector<string> *sim = this->parse(0);

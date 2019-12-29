@@ -2,7 +2,8 @@
 #include "Command.h"
 using namespace std;
 
-    vector<string>* Command::parse(int n) {
+
+vector<string>* Command::parse(int n) {
     // The parsed data in a vector.
     vector<string>* parsed = new vector<string>;
     int i = 0;
@@ -105,7 +106,7 @@ bool Command::Condition(double var, double val, string op) {
 }
 
 Expression* Command::setVar(string s) {
-
+    s.erase(std::remove_if(s.begin(), s.end(), ::isspace), s.end());
     Interpreter *i = new Interpreter();
     string ss = string(s);
     stringstream setVar;

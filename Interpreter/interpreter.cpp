@@ -102,7 +102,7 @@ void interpreter::lexer() {
         while(line[i] != '\0') {
 
             if (line[i] == '(' || line[i] == ' ' || line[i] == ')' || line[i] == ',' ||
-                    line[i] == '{' || line[i] == '}') {
+                line[i] == '{' || line[i] == '}') {
 
 
 
@@ -115,7 +115,7 @@ void interpreter::lexer() {
                 token.erase(remove(token.begin(), token.end(), '\t'), token.end());
                 this->tokens->push_back(token);
                 if (token == "=" || token == ">" || token == "<" || token == ">=" || token == "<=" ||
-                token == "!=" || token == "==") {
+                    token == "!=" || token == "==") {
                     token = line.substr(i + 1, line.length() - i - 1);
                     token.erase(remove(token.begin(), token.end(), '\t'), token.end());
                     if (token.find('{') != string::npos) {
