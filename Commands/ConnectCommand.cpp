@@ -47,6 +47,7 @@ void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
              dir != symbolTable->ClientUpdate->end(); dir++) {
             ostringstream newVals;
             double d = symbolTable->variables->at(dir->second)->GetValue();
+
             newVals << std::setprecision(10);
             newVals << std::fixed;
             // We generate a string in the generic server_small.xml format
@@ -58,7 +59,6 @@ void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
             // Cut the last ',' from the end
             dataToUpdate = dataToUpdate.substr(0, dataToUpdate.size());
             this->clientConnection->SendData(&dataToUpdate);
-            std::this_thread::sleep_for(std::chrono::milliseconds(20));
             int valread = this->clientConnection->readFromServer();
 
         }
