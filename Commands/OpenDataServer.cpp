@@ -36,8 +36,8 @@ there_are_more_commands) {
     char dataFromSim[1024] = {0};
     while(*there_are_more_commands) {
         int bytesRead = read(client_connected , dataFromSim, 1024);
-        //cout << dataFromSim << endl;
         ChangeMap(dataFromSim);
+        std::this_thread::sleep_for(std::chrono::milliseconds(20));
     }
     this->serverConnection->close();
 }

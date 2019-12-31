@@ -8,6 +8,7 @@ using namespace std;
 int main(int argc, char* argv[]) {
     thread t1;
     thread t2;
+    bool catched = false;
     try {
         interpreter *interpreter_flight = new interpreter(argv[1]);
         vector<string> *interpeted = new vector<string>;
@@ -74,11 +75,16 @@ int main(int argc, char* argv[]) {
     } catch(const char* c) {
         t1.join();
         t2.join();
+        catched = true;
     } catch (std::invalid_argument e) {
         t1.join();
         t2.join();
+        catched = true;
     }
-
+    if (!catched) {
+        t1.join();
+        t2.join();
+    }
     // Join the treads of the server and the client.
     return 0;
 }

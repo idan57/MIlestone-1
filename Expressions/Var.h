@@ -15,9 +15,11 @@ using namespace std;
 class Var {
 private:
     string path;
-    double value;
+    double value = 888888888888;
+    bool isUpdated = false;
     mutex locker;
 public:
+    bool updated = false;
     Var(string p, double val):path(p),value(val){}
     void SetPath(string p) {this->path = p;}
     string GetPath() {
@@ -27,10 +29,17 @@ public:
     // Set the value of the variable
     void SetValue(double val) {
         locker.lock();
-
-        // Change the value only if it doesn't exceed 10
-        if ((this->value - val) < 10) {
+        if (!isUpdated) {
             this->value = val;
+            updated = true;
+            isUpdated = true;
+        }
+        // Change the value only if it doesn't exceed 10
+        else if ((this->value - val) < 10  && this->value != val) {
+            this->value = val;
+            updated = true;
+        } else {
+            updated = false;
         }
         locker.unlock();
     }

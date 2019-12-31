@@ -45,22 +45,28 @@ void ConnectCommand::UpdatingMode(bool *there_are_more_commands) {
     while (*there_are_more_commands) {
         for (auto dir = symbolTable->ClientUpdate->begin();
              dir != symbolTable->ClientUpdate->end(); dir++) {
-            ostringstream newVals;
-            double d = symbolTable->variables->at(dir->second)->GetValue();
+            Var* var =  symbolTable->variables->at(dir->second);
+            if (var->updated) {
+                var->updated = false;
+                ostringstream newVals;
+                double d = var->GetValue();
+                if (dir->second == "/sim/model/c172p/brake-parking") {
+                    cout << d << endl;
+                }
+                newVals << std::setprecision(10);
+                newVals << std::fixed;
+                // We generate a string in the generic server_small.xml format
+                newVals << "set " << dir->second << " " << d << "\r\n";
 
-            newVals << std::setprecision(10);
-            newVals << std::fixed;
-            // We generate a string in the generic server_small.xml format
-            newVals << "set " << dir->second << " " << d << "\r\n";
+                // Get the generated string
+                string dataToUpdate = newVals.str();
 
-            // Get the generated string
-            string dataToUpdate = newVals.str();
-
-            // Cut the last ',' from the end
-            dataToUpdate = dataToUpdate.substr(0, dataToUpdate.size());
-            this->clientConnection->SendData(&dataToUpdate);
-            int valread = this->clientConnection->readFromServer();
-
+                // Cut the last ',' from the end
+                dataToUpdate = dataToUpdate.substr(0, dataToUpdate.size());
+                this->clientConnection->SendData(&dataToUpdate);
+                std::this_thread::sleep_for(std::chrono::milliseconds(20));
+                int valread = this->clientConnection->readFromServer();
+            }
         }
     }
     this->clientConnection->close();
